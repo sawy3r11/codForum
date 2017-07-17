@@ -3,6 +3,8 @@ package com.hashtagdk.model;
 import javafx.geometry.Pos;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 /**
@@ -14,8 +16,20 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
+    @NotNull
+    @Size(min=3, max=20)
     private String login;
+
+    @NotNull
+    @Size(min=4, max=32)
+    @Transient
     private String password;
+    @Transient
+    private String password2;
+
+    private String passwordHash;
+    private String email;
 
     @OneToOne
     private UserStat userStat;
@@ -61,5 +75,29 @@ public class User {
 
     public void setUserStat(UserStat userStat) {
         this.userStat = userStat;
+    }
+
+    public String getPassword2() {
+        return password2;
+    }
+
+    public void setPassword2(String password2) {
+        this.password2 = password2;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPasswordHash() {
+        return passwordHash;
+    }
+
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
     }
 }

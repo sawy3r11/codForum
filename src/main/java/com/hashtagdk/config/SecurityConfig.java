@@ -1,6 +1,7 @@
 package com.hashtagdk.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -10,6 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  * Created by dawid on 7/17/17.
  */
 @EnableWebSecurity
+@ComponentScan("com.hashtagdk")
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Override
@@ -17,7 +19,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         httpSecurity.authorizeRequests()
                     .antMatchers("/index").hasRole("USER")
                 .and()
-                .formLogin();
+                .formLogin()
+                    .loginPage("/login");
     }
 
     @Autowired

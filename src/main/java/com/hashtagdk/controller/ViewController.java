@@ -1,8 +1,17 @@
 package com.hashtagdk.controller;
 
+import com.hashtagdk.model.User;
+import com.hashtagdk.repository.UserRepository;
+import com.hashtagdk.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.validation.Valid;
 
 /**
  * Created by dawid on 7/14/17.
@@ -10,16 +19,69 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class ViewController {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/login")
-    public String getLoginView(){
-        return "login";
+    private UserService userService;
+
+    @Autowired
+    public ViewController(UserService userService){
+        this.userService = userService;
     }
-    @RequestMapping(method = RequestMethod.GET, value = "/register")
-    public String getRegisterView(){
+
+
+    @RequestMapping(method = RequestMethod.GET, value = {"/login", "/"})
+    public ModelAndView getLoginPage(){
+        ModelAndView modelAndView = new ModelAndView();
+        User user = new User();
+        modelAndView.addObject("user", user);
+        modelAndView.setViewName("login");
+        return modelAndView;
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = {"/login"})
+    public ModelAndView loginPagePost(User user){
+        ModelAndView modelAndView = new ModelAndView();
+
+
+        return modelAndView;
+    }
+
+    public String getRegisterView(User user){
         return "register";
     }
+
     @RequestMapping(method = RequestMethod.GET, value = "/index")
     public String getIndex(){
         return "index";
+    }
+
+    @RequestMapping(value = "/register", method = RequestMethod.GET)
+    public ModelAndView registration(){
+        ModelAndView modelAndView = new ModelAndView();
+        User user = new User();
+        modelAndView.addObject("user", user);
+        modelAndView.setViewName("register");
+
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public ModelAndView createUser(@Valid User user, BindingResult bindingResult){
+        ModelAndView modelAndView = new ModelAndView();
+        if(bindingResult.hasErrors()){
+            modelAndView.setViewName("register");
+        }
+        else if(!user.getPassword().equals(user.getPassword2())){
+            modelAndView.setViewName("register");
+            modelAndView.addObject("passwordDiffrent", true);
+        }
+
+        else if (userService.checkIfExist(user.getLogin())){
+            modelAndView.addObject("userExist", true);
+        }
+        else{
+            // add new user
+            userService.save(user);
+            modelAndView.setViewName("index");
+        }
+        return modelAndView;
     }
 }

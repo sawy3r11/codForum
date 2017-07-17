@@ -48,6 +48,7 @@
                                     <div class="input-box">
                                         <button class="login">Zaloguj się</button>
                                     </div>
+                                    <div><input type="submit" value="Sign In"/></div>
                                 </form>
                                 <form action="register.html">
                                     <button class="login" style="background-color: #55D132">Nie masz konta? Zarejestruj się!</button>
@@ -71,13 +72,16 @@
         <div class="container page-minFooter">
             <div class="register-panel">
                 <h2>Logowanie</h2>
-                <form action="#" th:action="@{/login}" method="post">
+                <div th:if="${param.error}">
+                    Podano złe dane!
+                </div>
+                <form action="#" th:action="@{/login}" th:object="${user}"  method="post">
                     <div class="input-box">
-                        <input id="rUsername" type="text" placeholder="Nazwa użytkownika" required="required"></input>
+                        <input name="username" id="rUsername" type="text" placeholder="Nazwa użytkownika" required="required"></input>
                         <label for="rUsername"><i class="fa fa-user" aria-hidden="true"></i></label>
                     </div>
                     <div class="input-box">
-                        <input id="rPassword" type="password" placeholder="Hasło" required="required"></input>
+                        <input name="password" id="rPassword" type="password" placeholder="Hasło" required="required"></input>
                         <label for="rPassword"><i class="fa fa-unlock-alt" aria-hidden="true"></i></label>
                     </div>
 
