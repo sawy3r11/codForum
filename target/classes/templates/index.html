@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800%7CRoboto:400,700,900" rel="stylesheet"/>
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}"/>
+    <link rel="stylesheet" href="../static/css/normalize.css" th:href="@{/css/normalize.css}"/>
+    <link rel="stylesheet" href="../static/css/style.css" th:href="@{/css/style.css}"/>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="left">
+                <h1 class="page-header">
+                    <a href="index.html"><i class="fa fa-laptop" aria-hidden="true"></i><span>codForum</span></a>
+                </h1>
+            </div>
+            <div class="headerCol right">
+                <ul class="nav-list">
+                    <li>
+                        <form action="#" class="search-area">
+                            <div class="search-input">
+                                <input type="search" id="search" placeholder="Szukaj na forum"></input>
+                                <button name="submit" type="submit">Ok</button>
+                            </div>
+                            <label for="search"><span id="btn-search" class="btn-navlist"><i class="fa fa-search" aria-hidden="true"></i></span></label>
+                        </form>
+                    </li>
+                    <li>
+                        <div class="login-box">
+                            <span id="btn-signin" class="btn-navlist"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <div class="login-panel">
+                                <h2 class="login-header">Login</h2>
+                                <form action="#" method="post" class="login-container">
+                                    <div class="input-box">
+                                        <input type="text" id="username" class="login-input" placeholder="Nazwa użytkownika" required="required"></input>
+                                        <label for="username"><i class="fa fa-user" aria-hidden="true"></i></label>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="password" id="password" class="login-input" placeholder="Hasło" required="required"></input>
+                                        <label for="password"><i class="fa fa-unlock-alt" aria-hidden="true"></i></label>
+                                    </div>
+                                    <div class="input-box">
+                                        <button class="login">Zaloguj się</button>
+                                    </div>
+                                </form>
+                                <form action="register.html">
+                                    <button class="login" style="background-color: #55D132">Nie masz konta? Zarejestruj się!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-hamburger">
+                <button class="hamburger"></button>
+            </div>
+            <ul class="main-nav left">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="legend">
+       <h2 class="outline">Legenda</h2>
+        <div class="legend">
+            <div class="container">
+                <div class="forum-icon">
+                    <img src="img/avatar.png" th:src="@{/img/avatar.png}" class="img-responsive" style="border-color: #00FF00;" alt="" />
+                    <span>Nowy post</span>
+                </div>
+                <div class="forum-icon">
+                    <img src="img/avatar.png" class="img-responsive" style="border-color: red;" alt="" />
+                    <span>Zamknięty temat</span>
+                </div>
+                <div class="forum-icon">
+                    <img src="img/avatar.png" class="img-responsive" alt="" />
+                    <span>Przeczytany temat</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="statistics">
+        <div class="stats-header">
+            <div class="container">
+                <h2 class="stats-header"><i class="fa fa-pie-chart" aria-hidden="true"></i>Statystyki</h2>
+            </div>
+        </div>
+        <section id="activity-stats">
+            <div class="container">
+                <ul class="activity-stats">
+                    <li>
+                        <h3>Kto jest na forum? <span>(28 zarejestrowanych użytkowników, 80 gości)</span></h3>
+                        <p>Zarejestrowani użytkownicy: <a href="#">Mati</a></p>
+                    </li>
+                    <li>
+                        <p>Przez ostanie 48 godzin byli na forum: <a href="#">Mati</a>,<a href="#">Tomix</a>,<a href="#">Sawyer</a>,<a href="#">Dawid</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="general-stats">
+           <h2 class="outline">General stats</h2>
+            <div class="general-stats">
+                <div class="container">
+                    <ul>
+                        <li data-title="Napisanych postów">
+                            <p><i class="fa fa-comments" aria-hidden="true"></i> <br/> <span>120</span></p>
+                        </li>
+                        <li data-title="Zarejestrowanych użytkowników">
+                            <p><i class="fa fa-users" aria-hidden="true"></i> <br/> <span>30</span></p>
+                        </li>
+                        <li data-title="Odwiedzin">
+                            <p><i class="fa fa-eye" aria-hidden="true"></i> <br/> <span>12899</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="page-footer">
+        <div class="prefooter">
+            <div class="container">
+                <ul class="social-media">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p class="left">2017 &copy; Wszelkie prawa zastrzeżone.</p>
+                <p class="right">Kodowanie: <a href="#">Mati</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

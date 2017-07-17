@@ -28,4 +28,60 @@ public class Topic {
 
     @OneToMany(mappedBy = "topic")
     private List<UserTopicState> userTopicStates;
+
+    public Long getIdTopic() {
+        return idTopic;
+    }
+
+    public void setIdTopic(Long idTopic) {
+        this.idTopic = idTopic;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public Date getLastUpdateDate() {
+        return lastUpdateDate;
+    }
+
+    public void setLastUpdateDate(Date lastUpdateDate) {
+        this.lastUpdateDate = lastUpdateDate;
+    }
+
+    public TopicStat getTopicStat() {
+        return topicStat;
+    }
+
+    public void setTopicStat(TopicStat topicStat) {
+        this.topicStat = topicStat;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public List<UserTopicState> getUserTopicStates() {
+        return userTopicStates;
+    }
+
+    public void setUserTopicStates(List<UserTopicState> userTopicStates) {
+        this.userTopicStates = userTopicStates;
+    }
 }

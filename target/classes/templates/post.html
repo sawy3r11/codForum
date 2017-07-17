@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800%7CRoboto:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="left">
+                <h1 class="page-header">
+                    <a href="index.html"><i class="fa fa-laptop" aria-hidden="true"></i><span>codForum</span></a>
+                </h1>
+            </div>
+            <div class="headerCol right">
+                <ul class="nav-list">
+                    <li>
+                        <form action="#" class="search-area">
+                            <div class="search-input">
+                                <input type="search" id="search" placeholder="Szukaj na forum">
+                                <button name="submit" type="submit">Ok</button>
+                            </div>
+                            <label for="search"><span id="btn-search" class="btn-navlist"><i class="fa fa-search" aria-hidden="true"></i></span></label>
+                        </form>
+                    </li>
+                    <li>
+                        <div class="login-box">
+                            <span id="btn-signin" class="btn-navlist"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <div class="login-panel">
+                                <h2 class="login-header">Login</h2>
+                                <form action="#" method="post" class="login-container">
+                                    <div class="input-box">
+                                        <input type="text" id="username" class="login-input" placeholder="Nazwa użytkownika" required>
+                                        <label for="username"><i class="fa fa-user" aria-hidden="true"></i></label>
+                                    </div>
+                                    <div class="input-box">
+                                        <input type="password" id="password" class="login-input" placeholder="Hasło" required>
+                                        <label for="password"><i class="fa fa-unlock-alt" aria-hidden="true"></i></label>
+                                    </div>
+                                    <div class="input-box">
+                                        <button class="login">Zaloguj się</button>
+                                    </div>
+                                </form>
+                                <form action="register.html">
+                                    <button class="login" style="background-color: #55D132">Nie masz konta? Zarejestruj się!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="box-hamburger">
+                <button class="hamburger"></button>
+            </div>
+            <ul class="main-nav left">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="container page-minFooter">
+            <div class="post-header">
+                <div class="forum-icon">
+                    <img src="img/avatar.png" class="img-responsive" alt="">
+                </div>
+                <div class="post-details">
+                    <h2>Jak zainstalowac windowsa obok Linuxa</h2>
+                    <p>
+                        Post napisany przez: <a href="#">Mati</a>
+                        <i class="fa fa-clock-o" aria-hidden="true"></i> 27 styczeń 2017
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <form action="addpost.html" class="btn-answerArea">
+                    <button class="btn-answer right">Napisz post</button>
+                </form>
+                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ad ab placeat quia, beatae ipsam reprehenderit itaque totam rem iusto magni hic voluptatum facere laboriosam earum veniam fugit delectus distinctio facilis nihil eius blanditiis. Ut quis, repudiandae doloribus asperiores delectus labore dolore atque nesciunt, dolores expedita et similique! Esse accusamus, dolorum est ipsam pariatur quam nisi eveniet sint id veritatis, optio dignissimos repudiandae, neque animi, harum cumque nemo sequi minima deleniti atque consequuntur autem fugit ab eos. Iusto rerum, sequi pariatur commodi delectus, inventore eum incidunt vel consequatur magni adipisci, amet porro laborum maiores eligendi sint. Cumque molestiae fugit omnis perspiciatis consectetur in, quia distinctio rem nihil numquam suscipit temporibus quo maiores fuga cum, asperiores quibusdam vitae nemo consequuntur. Iure, dolores accusantium voluptates a, at suscipit eius totam architecto ratione, placeat voluptatibus assumenda? Eius quam, officiis eligendi officia facilis saepe. Temporibus tempora distinctio blanditiis architecto, porro commodi facilis earum eaque.
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>23</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro explicabo saepe neque magnam ipsum laudantium sint, eveniet atque, ex error doloribus, placeat odit quam nostrum voluptatibus voluptate omnis, necessitatibus non quia ut. Animi nam, temporibus quae dicta odio provident consequatur aliquid, molestiae nihil ipsam soluta excepturi cum. Iusto, totam esse.
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>0</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deleniti earum velit cumque placeat laudantium molestias adipisci ut debitis perferendis.
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>0</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nesciunt, omnis aspernatur eaque, neque odit nihil magnam! Dicta neque asperiores obcaecati odit, laboriosam optio quis, consequatur architecto nostrum tempore! Temporibus provident, velit quasi beatae aliquam corporis! Distinctio perspiciatis eos vel commodi eaque quibusdam repudiandae deserunt ullam non vero alias quo labore odit, aperiam tempora nostrum illum. Tenetur molestias expedita repellendus commodi? Corporis ipsum deserunt ex voluptatem, sequi, hic labore reiciendis ea quas fugiat eum quos quibusdam asperiores, unde aliquam. Maiores sequi asperiores mollitia optio dolorem quidem animi odit itaque autem incidunt vel nihil, alias deleniti voluptate iusto omnis, sit vitae culpa ut cum quisquam, quasi neque molestiae sed. Suscipit necessitatibus totam, voluptatum rem, natus quisquam. Quibusdam eius deleniti temporibus voluptatibus nam perferendis ducimus ullam ab modi, accusantium voluptatem tempore consectetur debitis, vel ipsam et dolorem, ipsum dolorum molestiae quidem. Repellat doloribus harum voluptas necessitatibus a atque, laboriosam eaque facere, architecto ipsa nobis error eos eum, eius incidunt sed non pariatur ab illo perferendis molestiae deserunt. Distinctio unde praesentium veniam excepturi quis minima ex deleniti porro nemo, delectus cumque nulla nostrum est, repellat reiciendis cum. Doloribus officiis omnis voluptatum deleniti nulla corporis, suscipit esse eaque vel laudantium nobis maxime porro impedit cumque officia qui consectetur, quidem alias ratione rem accusamus harum repudiandae illum distinctio? Maxime veniam, delectus exercitationem, at ad dolorum officiis ex repudiandae veritatis, praesentium sint cum non beatae inventore explicabo. Asperiores, eligendi eos doloribus repudiandae non vitae. Eius optio quasi tenetur eveniet nesciunt, ipsam debitis quod reiciendis, molestiae quia, obcaecati. Molestiae dolorem fugit praesentium hic velit totam quae dolore similique quam, rerum blanditiis vero aperiam tempore, repellat provident qui nostrum eaque enim. Et aperiam mollitia, voluptates possimus dolore voluptas magni neque quibusdam quas modi, sunt natus, vero tempore dolorum! Molestiae quidem harum aliquid deserunt consequuntur voluptatibus cum quisquam, voluptatum beatae odio quaerat odit blanditiis sequi soluta dignissimos expedita distinctio nisi corporis! Neque, eaque incidunt praesentium deleniti, accusamus molestias alias cumque ipsam officiis hic, quidem possimus doloremque sapiente, sint mollitia pariatur asperiores totam animi tempore porro. Iure dolores, officia sunt eum ipsa fuga error reiciendis non architecto illo magnam quas sapiente perferendis harum atque alias quidem recusandae aspernatur blanditiis fugiat, dolore minima debitis, cupiditate enim. Soluta nobis quas, omnis amet ab quos maxime laudantium numquam, optio, expedita iste accusantium voluptatem dicta minima deserunt ipsum voluptate sit voluptates quisquam ratione! Placeat vero earum cumque, id, labore quam fugiat harum blanditiis cupiditate commodi pariatur ipsa ex consequuntur, dolorum et. Rem animi quasi facilis, repudiandae at...
+                            <button class="btn-readmore">Czytaj więcej</button>
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>23</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor sit amet..
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>-8</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, rem. Ab blanditiis architecto esse, delectus magni alias eos doloremque, recusandae odit, eaque et explicabo. Ad dignissimos corporis consequuntur magnam suscipit minima nulla obcaecati? Minima eius, commodi ratione rem inventore nobis quod id, maiores vero obcaecati reprehenderit qui enim perferendis odio saepe ea quia accusamus facilis voluptates explicabo. Esse molestiae ducimus dolor voluptate commodi numquam, ullam. Repellendus nihil eius blanditiis, facere at odit atque libero! Inventore ut temporibus eius, minus quam optio repudiandae quas pariatur, nisi perferendis dolores minima facilis maiores quidem doloremque non itaque facere ipsam culpa necessitatibus dolorem quibusdam quod velit molestiae. Iusto distinctio praesentium dolores, perspiciatis quis cum natus. Voluptates voluptatum magni, dolores commodi voluptatibus sapiente quibusdam natus laboriosam quia aliquid. Cumque dolorum amet porro voluptate voluptatum commodi, consequatur corporis quia distinctio quod quisquam tenetur, beatae odio dolore expedita quaerat! Debitis voluptates eum aliquid voluptatem quia est. Impedit iste optio, voluptates libero temporibus consequuntur, odit quibusdam blanditiis sapiente, aliquam nemo praesentium, ea. Rem repellat, voluptas! Nihil fugit est qui eius. Minima deleniti eveniet eaque placeat iste sapiente totam autem at, molestiae maxime sed possimus, voluptatem quaerat quae impedit cum quidem fugiat iure sit quas. Veritatis cumque reprehenderit, ducimus!
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>2</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quibusdam, omnis fuga dolorem quia dolores!
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>3</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor..
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>0</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <article class="post">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img src="img/avatar.png" class="img-responsive" alt="">
+                        </div>
+                        <a href="#">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quaerat, eligendi atque harum rerum nemo sunt reprehenderit soluta culpa quo, officiis repellendus odio eos cum mollitia dolore dolorum sequi ipsam enim labore ad porro fuga quasi aut! Iusto, voluptas. Expedita voluptatibus magnam eos soluta explicabo voluptate nisi sit fuga et deleniti error quia hic veritatis nihil quisquam iusto, rem eius magni perferendis! Aperiam, porro, hic. Accusamus, eligendi totam, nihil sequi id temporibus distinctio aliquam, voluptas vel explicabo quaerat ipsa quam dolorem repudiandae pariatur veniam. Ut unde quod vitae non laborum nostrum natus distinctio commodi nobis optio. Eius neque perspiciatis, quam incidunt suscipit nam libero. Velit natus, eum eaque quisquam. Harum suscipit tempora inventore corrupti officia, possimus aliquid nesciunt alias dolores quam nobis vitae minima vero optio cupiditate, obcaecati iusto voluptatum fugit? Numquam natus corporis veritatis sit quos, illo ipsum dolorem excepturi tempore optio culpa delectus est deserunt laudantium esse odio hic saepe officia libero facilis. Nobis ab neque, amet quibusdam sunt similique cumque reiciendis dignissimos quidem, sed rem corporis et accusamus excepturi esse natus quis harum provident ad voluptas temporibus optio alias modi dolore, deserunt. Quaerat culpa ducimus soluta, alias, eum dolor voluptatum repellendus ipsa magni aspernatur animi dolorem, perferendis tempora ratione nihil officia deserunt voluptate eveniet. Adipisci eius explicabo nesciunt eos, omnis. Consectetur saepe, nemo esse. Incidunt praesentium maiores repudiandae quidem ullam natus vitae aperiam voluptatibus deleniti nemo earum corporis, quibusdam tenetur hic voluptate aliquid accusamus, nisi. Ratione impedit nisi voluptatibus, odio quisquam harum, officia tempore recusandae esse est nulla quibusdam aperiam similique deserunt iste autem et distinctio quas laudantium itaque, quaerat velit atque! Sunt ab ullam aliquam incidunt ex at quibusdam magnam, consequatur quasi consequuntur vel necessitatibus odit totam alias magni laboriosam, molestias amet eveniet cumque beatae sit. Animi fugit, cumque ullam officia, temporibus
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>8</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <form action="addpost.html" class="btn-answerArea">
+                    <button class="btn-answer right">Napisz post</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="prefooter">
+            <div class="container">
+                <ul class="social-media">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p class="left">2017 &copy; Wszelkie prawa zastrzeżone.</p>
+                <p class="right">Kodowanie: <a href="#">Mati</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
