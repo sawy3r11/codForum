@@ -39,8 +39,7 @@ public class ViewController {
     @RequestMapping(method = RequestMethod.POST, value = {"/login"})
     public ModelAndView loginPagePost(User user){
         ModelAndView modelAndView = new ModelAndView();
-
-
+        modelAndView.setViewName("index");
         return modelAndView;
     }
 
