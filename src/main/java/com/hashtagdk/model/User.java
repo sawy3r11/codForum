@@ -5,7 +5,9 @@ import javafx.geometry.Pos;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by dawid on 7/13/17.
@@ -15,6 +17,7 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_user")
     private long id;
 
     @NotNull
@@ -31,9 +34,27 @@ public class User {
     private String passwordHash;
     private String email;
 
-    private boolean enabled;
 
+    private Boolean enabled;
     /* !USER ROLE! */
+    @OneToMany
+    private List<User_Role> user_roles;
+
+    public List<User_Role> getUser_roles() {
+        return user_roles;
+    }
+
+    public void setUser_roles(List<User_Role> user_roles) {
+        this.user_roles = user_roles;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
 
     @OneToOne
     private UserStat userStat;
@@ -105,13 +126,7 @@ public class User {
         this.passwordHash = passwordHash;
     }
 
-    public boolean isEnabled() {
-        return enabled;
-    }
 
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
-    }
 
     public List<Topic> getTopics() {
         return topics;
@@ -144,4 +159,5 @@ public class User {
     public void setPostAprobations(List<PostAprobation> postAprobations) {
         this.postAprobations = postAprobations;
     }
+
 }
