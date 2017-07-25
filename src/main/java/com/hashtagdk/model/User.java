@@ -31,6 +31,10 @@ public class User {
     private String passwordHash;
     private String email;
 
+    private boolean enabled;
+
+    /* !USER ROLE! */
+
     @OneToOne
     private UserStat userStat;
 
@@ -99,5 +103,45 @@ public class User {
 
     public void setPasswordHash(String passwordHash) {
         this.passwordHash = passwordHash;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public List<Topic> getTopics() {
+        return topics;
+    }
+
+    public void setTopics(List<Topic> topics) {
+        this.topics = topics;
+    }
+
+    public List<UserTopicState> getUserTopicStates() {
+        return userTopicStates;
+    }
+
+    public void setUserTopicStates(List<UserTopicState> userTopicStates) {
+        this.userTopicStates = userTopicStates;
+    }
+
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<Post> posts) {
+        this.posts = posts;
+    }
+
+    public List<PostAprobation> getPostAprobations() {
+        return postAprobations;
+    }
+
+    public void setPostAprobations(List<PostAprobation> postAprobations) {
+        this.postAprobations = postAprobations;
     }
 }
