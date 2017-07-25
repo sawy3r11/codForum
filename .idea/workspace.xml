@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05c08f9f-645c-4f80-b222-393cd5cbd387" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hashtagdk/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/hashtagdk/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hashtagdk/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/hashtagdk/model/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,6 +25,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1673#1684#0" expanded="true" />
+                <element signature="e#1778#1779#0" expanded="true" />
+                <element signature="e#1853#1854#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User_RoleRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/User_RoleRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,24 +62,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MvcConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/config/MvcConfig.java">
+      <file leaf-file-name="ViewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java">
+      <file leaf-file-name="RoleRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/RoleRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,16 +97,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User_Role.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/User_Role.java">
+      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,10 +112,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -139,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/userRepository.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/config/MvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/register.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java" />
@@ -149,6 +165,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/model/User_Role.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/User_RoleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -293,6 +312,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -316,7 +339,81 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeForum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeForum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeForum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeForum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeForum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeForum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -780,12 +877,12 @@
       <workItem from="1499980913874" duration="16655000" />
       <workItem from="1500033940440" duration="20286000" />
       <workItem from="1500305504032" duration="5411000" />
-      <workItem from="1500987827430" duration="819000" />
+      <workItem from="1500987827430" duration="2072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46111000" />
+    <option name="totallyTimeSpent" value="47364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,10 +915,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30752453" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30752453" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09487459" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14176664" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24012807" sideWeight="0.09448819" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24012807" sideWeight="0.9055118" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09765208" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -862,119 +959,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://Persistence/JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="254.25" y="555.0">UserStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserStat.java</node>
-            <node x="510.5" y="105.0">AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class</node>
-            <node x="93.625" y="177.0">Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java</node>
-            <node x="0.0" y="24.0">UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java</node>
-            <node x="106.25" y="603.0">PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java</node>
-            <node x="79.75" y="756.0">User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java</node>
-            <node x="109.75" y="957.0">UserRoles#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserRoles.java</node>
-            <node x="41.25" y="354.0">Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java</node>
-            <node x="482.25" y="0.0">AbstractPersistable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class</node>
-            <node x="649.25" y="12.0">null#null</node>
-            <node x="160.625" y="0.0">TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserRoles#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserRoles.java">
-              <point x="45.0" y="75.5" />
-              <point x="214.75" y="932.0" />
-              <point x="199.75" y="932.0" />
-              <point x="30.0" y="-39.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserStat.java">
-              <point x="72.0" y="-75.5" />
-              <point x="241.75" y="736.0" />
-              <point x="345.75" y="736.0" />
-              <point x="0.0" y="75.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java">
-              <point x="-72.0" y="-75.5" />
-              <point x="97.75" y="736.0" />
-              <point x="30.75" y="736.0" />
-              <point x="-30.75" y="39.5" />
-            </edge>
-            <edge source="AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="null#null">
-              <point x="47.75" y="-39.5" />
-              <point x="653.75" y="80.0" />
-              <point x="656.25" y="80.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java">
-              <point x="0.0" y="-75.5" />
-              <point x="0.0" y="27.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java">
-              <point x="36.0" y="-75.5" />
-              <point x="205.75" y="726.0" />
-              <point x="243.75" y="726.0" />
-              <point x="243.75" y="329.0" />
-              <point x="242.125" y="329.0" />
-              <point x="49.49999999999999" y="63.5" />
-            </edge>
-            <edge source="PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java" target="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java">
-              <point x="0.0" y="-27.5" />
-              <point x="169.75" y="530.0" />
-              <point x="178.5" y="530.0" />
-              <point x="45.75" y="75.5" />
-            </edge>
-            <edge source="AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="AbstractPersistable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class">
-              <point x="-47.75" y="-39.5" />
-              <point x="558.25" y="80.0" />
-              <point x="555.75" y="80.0" />
-              <point x="0.0" y="27.5" />
-            </edge>
-            <edge source="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java" target="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java">
-              <point x="0.0" y="-75.5" />
-              <point x="132.75" y="329.0" />
-              <point x="143.125" y="329.0" />
-              <point x="-49.5" y="63.5" />
-            </edge>
-            <edge source="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java" target="UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java">
-              <point x="-49.5" y="-63.5" />
-              <point x="143.125" y="152.0" />
-              <point x="92.25" y="152.0" />
-              <point x="30.75" y="39.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java">
-              <point x="-36.0" y="-75.5" />
-              <point x="133.75" y="726.0" />
-              <point x="95.75" y="726.0" />
-              <point x="95.75" y="530.0" />
-              <point x="87.0" y="530.0" />
-              <point x="-45.75" y="75.5" />
-            </edge>
-            <edge source="UserRoles#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserRoles.java" target="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java">
-              <point x="-30.0" y="-39.5" />
-              <point x="139.75" y="932.0" />
-              <point x="124.75" y="932.0" />
-              <point x="-45.0" y="75.5" />
-            </edge>
-            <edge source="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java" target="TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java">
-              <point x="49.5" y="-63.5" />
-              <point x="0.0" y="63.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8172348484848485" x="-227.0" y="284.0" />
-          <SelectedNodes>
-            <node>TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Embeddables</Category>
-            <Category>Properties</Category>
-            <Category>Superclasses</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Topic.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -987,6 +971,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1673#1684#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,6 +1043,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,6 +1067,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="79" lean-forward="true" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1673#1684#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,13 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="28" column="68" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -1207,21 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="79" column="68" lean-forward="true" selection-start-line="79" selection-start-column="68" selection-end-line="79" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1392,17 +1367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/User_Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1412,14 +1376,6 @@
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#400#401#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="165" lean-forward="false" selection-start-line="19" selection-start-column="165" selection-end-line="19" selection-end-column="165" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1435,9 +1391,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="694">
           <caret line="51" column="42" lean-forward="false" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/User_RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="77" lean-forward="false" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="165" lean-forward="false" selection-start-line="19" selection-start-column="165" selection-end-line="19" selection-end-column="165" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1673#1684#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
