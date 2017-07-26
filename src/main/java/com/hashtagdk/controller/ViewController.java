@@ -79,7 +79,7 @@ public class ViewController {
         else{
             // add new user
             userService.save(user);
-            modelAndView.setViewName("index");
+            modelAndView.setViewName("login");
         }
         return modelAndView;
     }
