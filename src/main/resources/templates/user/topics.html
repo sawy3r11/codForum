@@ -57,6 +57,14 @@
         </div>
     </nav>
 
+    <div class="legend">
+        <div class="container">
+            <form th:action="@{/user/addTopic}" method="get">
+                <button class="login" style="background-color: #09cb09">Załóż temat</button>
+            </form>
+        </div>
+    </div>
+
     <section id="legend">
        <h2 class="outline">Legenda</h2>
         <div class="legend">
@@ -132,8 +140,8 @@
         </div>
     </footer>
 
-    <script src="js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
-    <script src="js/main.js" th:src="@{/js/main.js}"></script>
+    <script src="../../js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script src="../../js/main.js" th:src="@{/js/main.js}"></script>
 </body>
 
 </html>

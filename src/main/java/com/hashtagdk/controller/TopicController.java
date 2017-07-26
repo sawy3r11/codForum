@@ -33,4 +33,12 @@ public class TopicController {
 
         return modelAndView;
     }
+
+    @RequestMapping(value = "/user/addTopic", method = RequestMethod.GET)
+    public ModelAndView addTopic(){
+        ModelAndView modelAndView = new ModelAndView();
+
+        modelAndView.setViewName("user/addTopic");
+        return modelAndView;
+    }
 }

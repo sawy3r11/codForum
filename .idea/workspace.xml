@@ -2,47 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05c08f9f-645c-4f80-b222-393cd5cbd387" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hashtagdk/config/SecurityConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hashtagdk/controller/ViewController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/hashtagdk/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/templates/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/topics.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/license.txt" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/compat3x/tiny_mce_popup.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/compat3x/tiny_mce_popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/link/plugin.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/link/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/paste/plugin.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/paste/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/table/plugin.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/table/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/visualchars/plugin.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/plugins/visualchars/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/skins/lightgray/fonts/tinymce.svg" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/skins/lightgray/fonts/tinymce.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/themes/modern/theme.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/themes/modern/theme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/tinymce.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/tinymce.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/tinymce.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tinymce/tinymce.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/addQuestion.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/addQuestion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/addpost.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/addpost.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/post.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/target/classes/static/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/license.txt" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/license.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/compat3x/tiny_mce_popup.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/compat3x/tiny_mce_popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/link/plugin.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/link/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/paste/plugin.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/paste/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/table/plugin.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/table/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/visualchars/plugin.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/plugins/visualchars/plugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/skins/lightgray/fonts/tinymce.svg" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/skins/lightgray/fonts/tinymce.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/themes/modern/theme.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/themes/modern/theme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/tinymce.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/tinymce.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/static/js/tinymce/tinymce.min.js" afterPath="$PROJECT_DIR$/target/classes/static/js/tinymce/tinymce.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/addQuestion.html" afterPath="$PROJECT_DIR$/target/classes/templates/addQuestion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/addpost.html" afterPath="$PROJECT_DIR$/target/classes/templates/addpost.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/login.html" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/post.html" afterPath="$PROJECT_DIR$/target/classes/templates/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/register.html" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/TopicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/TopicController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Topic.java" afterPath="$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Topic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/user/topics.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/topics.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,38 +28,190 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="topics.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/topics.html">
+      <file leaf-file-name="addTopic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/addTopic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="41" column="90" lean-forward="false" selection-start-line="41" selection-start-column="90" selection-end-line="41" selection-end-column="90" />
+            <state relative-caret-position="280">
+              <caret line="75" column="96" lean-forward="false" selection-start-line="75" selection-start-column="96" selection-end-line="75" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Topic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Topic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
               <folding>
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#1774#1775#0" expanded="true" />
+                <element signature="e#1818#1819#0" expanded="true" />
+                <element signature="e#1857#1858#0" expanded="true" />
+                <element signature="e#1892#1893#0" expanded="true" />
+                <element signature="e#1948#1949#0" expanded="true" />
+                <element signature="e#1996#1997#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="512">
+              <caret line="125" column="4" lean-forward="true" selection-start-line="125" selection-start-column="4" selection-end-line="126" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopicController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/TopicController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#registration#0;class#ViewController#0" expanded="false" />
-                <element signature="method#createUser#0;class#ViewController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
+            <state relative-caret-position="325">
               <caret line="46" column="52" lean-forward="false" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Persistence/JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel" pinned="false" current-in-tab="false">
+        <entry file="uml://Persistence/JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>Persistence</ID>
+              <OriginalElement>JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel</OriginalElement>
+              <nodes>
+                <node x="396.125" y="354.0">UserStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserStat.java</node>
+                <node x="652.375" y="105.0">AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class</node>
+                <node x="76.0" y="177.0">Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java</node>
+                <node x="0.0" y="24.0">UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java</node>
+                <node x="294.0" y="213.0">PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java</node>
+                <node x="42.125" y="591.0">Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Role.java</node>
+                <node x="185.125" y="555.0">User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java</node>
+                <node x="130.75" y="756.0">User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java</node>
+                <node x="183.625" y="354.0">Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java</node>
+                <node x="624.125" y="0.0">AbstractPersistable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class</node>
+                <node x="791.125" y="12.0">null#null</node>
+                <node x="143.0" y="0.0">TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Role.java" target="User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java">
+                  <point x="30.75" y="39.5" />
+                  <point x="134.375" y="726.0" />
+                  <point x="169.375" y="726.0" />
+                  <point x="-12.875" y="-27.5" />
+                </edge>
+                <edge source="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java" target="PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java">
+                  <point x="45.75" y="-75.5" />
+                  <point x="320.875" y="329.0" />
+                  <point x="325.75" y="329.0" />
+                  <point x="-31.75" y="27.5" />
+                </edge>
+                <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserStat.java">
+                  <point x="72.0" y="-75.5" />
+                  <point x="347.125" y="535.0" />
+                  <point x="487.625" y="535.0" />
+                  <point x="0.0" y="75.5" />
+                </edge>
+                <edge source="User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java" target="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java">
+                  <point x="12.875" y="-27.5" />
+                  <point x="195.125" y="726.0" />
+                  <point x="230.125" y="726.0" />
+                  <point x="-45.0" y="75.5" />
+                </edge>
+                <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java">
+                  <point x="-72.0" y="-75.5" />
+                  <point x="203.125" y="535.0" />
+                  <point x="30.75" y="535.0" />
+                  <point x="-30.75" y="39.5" />
+                </edge>
+                <edge source="AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="null#null">
+                  <point x="47.75" y="-39.5" />
+                  <point x="795.625" y="80.0" />
+                  <point x="798.125" y="80.0" />
+                  <point x="0.0" y="15.5" />
+                </edge>
+                <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java">
+                  <point x="45.0" y="75.5" />
+                  <point x="320.125" y="736.0" />
+                  <point x="220.875" y="736.0" />
+                  <point x="38.625" y="-27.5" />
+                </edge>
+                <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java">
+                  <point x="36.0" y="-75.5" />
+                  <point x="311.125" y="525.0" />
+                  <point x="385.625" y="525.0" />
+                  <point x="385.625" y="329.0" />
+                  <point x="389.25" y="329.0" />
+                  <point x="31.75" y="27.5" />
+                </edge>
+                <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java">
+                  <point x="-36.0" y="-75.5" />
+                  <point x="239.125" y="525.0" />
+                  <point x="146.875" y="525.0" />
+                  <point x="146.875" y="329.0" />
+                  <point x="125.5" y="329.0" />
+                  <point x="-49.5" y="63.5" />
+                </edge>
+                <edge source="AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="AbstractPersistable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class">
+                  <point x="-47.75" y="-39.5" />
+                  <point x="700.125" y="80.0" />
+                  <point x="697.625" y="80.0" />
+                  <point x="0.0" y="27.5" />
+                </edge>
+                <edge source="User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java" target="Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Role.java">
+                  <point x="-38.625" y="-27.5" />
+                  <point x="143.625" y="736.0" />
+                  <point x="72.875" y="736.0" />
+                  <point x="-30.75" y="39.5" />
+                </edge>
+                <edge source="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java" target="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java">
+                  <point x="-45.75" y="-75.5" />
+                  <point x="229.375" y="329.0" />
+                  <point x="224.5" y="329.0" />
+                  <point x="49.5" y="63.5" />
+                </edge>
+                <edge source="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java" target="UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java">
+                  <point x="-49.5" y="-63.5" />
+                  <point x="125.5" y="152.0" />
+                  <point x="92.25" y="152.0" />
+                  <point x="30.75" y="39.5" />
+                </edge>
+                <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java">
+                  <point x="0.0" y="-75.5" />
+                  <point x="0.0" y="75.5" />
+                </edge>
+                <edge source="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java" target="TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java">
+                  <point x="49.5" y="-63.5" />
+                  <point x="0.0" y="63.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.8399518652226233" x="-136.9606017191977" y="275.730659025788" />
+              <SelectedNodes>
+                <node>TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Properties</Category>
+                <Category>Embeddables</Category>
+                <Category>Superclasses</Category>
+              </Categories>
             </state>
           </provider>
         </entry>
@@ -116,6 +231,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>req</find>
+      <find>input</find>
+      <find>required</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,7 +261,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/template/post.html" />
         <option value="$PROJECT_DIR$/src/main/resources/template/addQuestion.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SeciurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Topic.java" />
         <option value="/usr/lib/jvm/java-8-oracle/src.zip!/java/util/ArrayList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/repository/userRepository.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -163,9 +279,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/TopicController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/user/topics.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/topics.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/TopicController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/addTopic.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Topic.java" />
       </list>
     </option>
   </component>
@@ -269,36 +387,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codeForum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codeForum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,6 +579,7 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/user" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -936,7 +1025,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57024000" />
+    <option name="totallyTimeSpent" value="59567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -948,7 +1037,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1044" extended-state="6" />
+    <frame x="1920" y="0" width="1920" height="1044" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -969,12 +1058,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4711014" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17993458" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7699019" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24279615" sideWeight="0.10721649" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24279615" sideWeight="0.8927835" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2801494" sideWeight="0.0930851" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2801494" sideWeight="0.9069149" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09765208" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1074,7 +1163,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/TopicStat.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1220,130 +1308,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="73" column="48" lean-forward="false" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Persistence/JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="400.75" y="354.0">UserStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserStat.java</node>
-            <node x="657.0" y="105.0">AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class</node>
-            <node x="147.0" y="177.0">Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java</node>
-            <node x="298.0" y="24.0">UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java</node>
-            <node x="0.0" y="213.0">PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java</node>
-            <node x="194.125" y="555.0">User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java</node>
-            <node x="54.375" y="354.0">Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java</node>
-            <node x="628.75" y="0.0">AbstractPersistable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class</node>
-            <node x="795.75" y="12.0">null#null</node>
-            <node x="115.0" y="0.0">TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="null#null">
-              <point x="47.75" y="-39.5" />
-              <point x="800.25" y="80.0" />
-              <point x="802.75" y="80.0" />
-              <point x="0.0" y="15.5" />
-            </edge>
-            <edge source="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java" target="PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java">
-              <point x="-45.75" y="-75.5" />
-              <point x="100.125" y="329.0" />
-              <point x="95.25" y="329.0" />
-              <point x="31.75" y="27.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserStat.java">
-              <point x="64.0" y="-63.5" />
-              <point x="338.125" y="535.0" />
-              <point x="492.25" y="535.0" />
-              <point x="0.0" y="75.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java">
-              <point x="-64.0" y="-63.5" />
-              <point x="210.125" y="535.0" />
-              <point x="35.375" y="535.0" />
-              <point x="35.375" y="329.0" />
-              <point x="31.75" y="329.0" />
-              <point x="-31.75" y="27.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java">
-              <point x="0.0" y="-63.5" />
-              <point x="274.125" y="535.0" />
-              <point x="275.22727272727275" y="535.0" />
-              <point x="275.22727272727275" y="329.0" />
-              <point x="295.5" y="329.0" />
-              <point x="49.5" y="63.5" />
-            </edge>
-            <edge source="AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="AbstractPersistable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class">
-              <point x="-47.75" y="-39.5" />
-              <point x="704.75" y="80.0" />
-              <point x="702.25" y="80.0" />
-              <point x="0.0" y="27.5" />
-            </edge>
-            <edge source="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java" target="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java">
-              <point x="45.75" y="-75.5" />
-              <point x="191.625" y="329.0" />
-              <point x="196.5" y="329.0" />
-              <point x="-49.5" y="63.5" />
-            </edge>
-            <edge source="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java" target="UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java">
-              <point x="49.5" y="-63.5" />
-              <point x="295.5" y="152.0" />
-              <point x="328.75" y="152.0" />
-              <point x="-30.75" y="39.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java">
-              <point x="-32.0" y="-63.5" />
-              <point x="242.125" y="525.0" />
-              <point x="145.875" y="525.0" />
-              <point x="0.0" y="75.5" />
-            </edge>
-            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java">
-              <point x="32.0" y="-63.5" />
-              <point x="306.125" y="525.0" />
-              <point x="390.25" y="525.0" />
-              <point x="30.750000000000014" y="39.5" />
-            </edge>
-            <edge source="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java" target="TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java">
-              <point x="-49.5" y="-63.5" />
-              <point x="0.0" y="63.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.8461538461538461" x="424.0" y="341.0" />
-          <SelectedNodes>
-            <node>TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Embeddables</Category>
-            <Category>Properties</Category>
-            <Category>Superclasses</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="7" selection-end-line="35" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Topic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#673#674#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1495,29 +1464,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/TopicController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="57" lean-forward="false" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="325">
+          <caret line="46" column="52" lean-forward="false" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/topics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="41" column="90" lean-forward="false" selection-start-line="41" selection-start-column="90" selection-end-line="41" selection-end-column="90" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+    <entry file="uml://Persistence/JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/ea8d15bf/entityManagerFactory/codeForum/jpa/JPA/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="396.125" y="354.0">UserStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserStat.java</node>
+            <node x="652.375" y="105.0">AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class</node>
+            <node x="76.0" y="177.0">Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java</node>
+            <node x="0.0" y="24.0">UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java</node>
+            <node x="294.0" y="213.0">PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java</node>
+            <node x="42.125" y="591.0">Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Role.java</node>
+            <node x="185.125" y="555.0">User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java</node>
+            <node x="130.75" y="756.0">User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java</node>
+            <node x="183.625" y="354.0">Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java</node>
+            <node x="624.125" y="0.0">AbstractPersistable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class</node>
+            <node x="791.125" y="12.0">null#null</node>
+            <node x="143.0" y="0.0">TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Role.java" target="User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java">
+              <point x="30.75" y="39.5" />
+              <point x="134.375" y="726.0" />
+              <point x="169.375" y="726.0" />
+              <point x="-12.875" y="-27.5" />
+            </edge>
+            <edge source="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java" target="PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java">
+              <point x="45.75" y="-75.5" />
+              <point x="320.875" y="329.0" />
+              <point x="325.75" y="329.0" />
+              <point x="-31.75" y="27.5" />
+            </edge>
+            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserStat.java">
+              <point x="72.0" y="-75.5" />
+              <point x="347.125" y="535.0" />
+              <point x="487.625" y="535.0" />
+              <point x="0.0" y="75.5" />
+            </edge>
+            <edge source="User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java" target="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java">
+              <point x="12.875" y="-27.5" />
+              <point x="195.125" y="726.0" />
+              <point x="230.125" y="726.0" />
+              <point x="-45.0" y="75.5" />
+            </edge>
+            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java">
+              <point x="-72.0" y="-75.5" />
+              <point x="203.125" y="535.0" />
+              <point x="30.75" y="535.0" />
+              <point x="-30.75" y="39.5" />
+            </edge>
+            <edge source="AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="null#null">
+              <point x="47.75" y="-39.5" />
+              <point x="795.625" y="80.0" />
+              <point x="798.125" y="80.0" />
+              <point x="0.0" y="15.5" />
+            </edge>
+            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java">
+              <point x="45.0" y="75.5" />
+              <point x="320.125" y="736.0" />
+              <point x="220.875" y="736.0" />
+              <point x="38.625" y="-27.5" />
+            </edge>
+            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="PostAprobation#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/PostAprobation.java">
+              <point x="36.0" y="-75.5" />
+              <point x="311.125" y="525.0" />
+              <point x="385.625" y="525.0" />
+              <point x="385.625" y="329.0" />
+              <point x="389.25" y="329.0" />
+              <point x="31.75" y="27.5" />
+            </edge>
+            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java">
+              <point x="-36.0" y="-75.5" />
+              <point x="239.125" y="525.0" />
+              <point x="146.875" y="525.0" />
+              <point x="146.875" y="329.0" />
+              <point x="125.5" y="329.0" />
+              <point x="-49.5" y="63.5" />
+            </edge>
+            <edge source="AbstractAuditable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractAuditable.class" target="AbstractPersistable#jar:///home/dawid/.m2/repository/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE.jar!/org/springframework/data/jpa/domain/AbstractPersistable.class">
+              <point x="-47.75" y="-39.5" />
+              <point x="700.125" y="80.0" />
+              <point x="697.625" y="80.0" />
+              <point x="0.0" y="27.5" />
+            </edge>
+            <edge source="User_Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User_Role.java" target="Role#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Role.java">
+              <point x="-38.625" y="-27.5" />
+              <point x="143.625" y="736.0" />
+              <point x="72.875" y="736.0" />
+              <point x="-30.75" y="39.5" />
+            </edge>
+            <edge source="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java" target="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java">
+              <point x="-45.75" y="-75.5" />
+              <point x="229.375" y="329.0" />
+              <point x="224.5" y="329.0" />
+              <point x="49.5" y="63.5" />
+            </edge>
+            <edge source="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java" target="UserTopicState#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/UserTopicState.java">
+              <point x="-49.5" y="-63.5" />
+              <point x="125.5" y="152.0" />
+              <point x="92.25" y="152.0" />
+              <point x="30.75" y="39.5" />
+            </edge>
+            <edge source="User#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/User.java" target="Post#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Post.java">
+              <point x="0.0" y="-75.5" />
+              <point x="0.0" y="75.5" />
+            </edge>
+            <edge source="Topic#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/Topic.java" target="TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java">
+              <point x="49.5" y="-63.5" />
+              <point x="0.0" y="63.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8399518652226233" x="-136.9606017191977" y="275.730659025788" />
+          <SelectedNodes>
+            <node>TopicStat#file:///home/dawid/IdeaProjects/Projekt_codForum/codeForum/src/main/java/com/hashtagdk/model/TopicStat.java</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Properties</Category>
+            <Category>Embeddables</Category>
+            <Category>Superclasses</Category>
+          </Categories>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/ViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="206">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1527,10 +1608,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/config/SecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/controller/TopicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="46" column="52" lean-forward="false" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
+        <state relative-caret-position="578">
+          <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/topics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="12" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/addTopic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="75" column="96" lean-forward="false" selection-start-line="75" selection-start-column="96" selection-end-line="75" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashtagdk/model/Topic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
+          <folding>
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#1722#1723#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#1948#1949#0" expanded="true" />
+            <element signature="e#1996#1997#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="125" column="4" lean-forward="true" selection-start-line="125" selection-start-column="4" selection-end-line="126" selection-end-column="72" />
           <folding />
         </state>
       </provider>

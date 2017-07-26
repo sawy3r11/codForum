@@ -1,6 +1,7 @@
 package com.hashtagdk.model;
 
 import javax.persistence.*;
+import java.sql.Clob;
 import java.util.Date;
 import java.util.List;
 
@@ -14,7 +15,10 @@ public class Topic {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idTopic;
     private Date date;
-    private String content;
+    private String topicTitle;
+
+    @Lob
+    private String topicContent;
     /*TODO
     * dodac enum z state*/
     private Date lastUpdateDate;
@@ -45,13 +49,6 @@ public class Topic {
         this.date = date;
     }
 
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
 
     public Date getLastUpdateDate() {
         return lastUpdateDate;
@@ -83,5 +80,21 @@ public class Topic {
 
     public void setUserTopicStates(List<UserTopicState> userTopicStates) {
         this.userTopicStates = userTopicStates;
+    }
+
+    public String getTopicTitle() {
+        return topicTitle;
+    }
+
+    public void setTopicTitle(String topicTitle) {
+        this.topicTitle = topicTitle;
+    }
+
+    public String getTopicContent() {
+        return topicContent;
+    }
+
+    public void setTopicContent(String topicContent) {
+        this.topicContent = topicContent;
     }
 }
