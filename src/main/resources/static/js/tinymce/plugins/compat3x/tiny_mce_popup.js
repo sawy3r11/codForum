@@ -241,7 +241,7 @@ var tinyMCEPopup = {
   },
 
   /**
-   * Executes a color picker on the specified element id. When the user
+   * Executes a color picker on the specified element id. When the templates.user
    * then selects a color it will be set as the value of the specified element.
    *
    * @method pickColor
@@ -286,7 +286,7 @@ var tinyMCEPopup = {
    *
    * @method confirm
    * @param {String} t Title for the new confirm dialog.
-   * @param {function} cb Callback function to be executed after the user has selected ok or cancel.
+   * @param {function} cb Callback function to be executed after the templates.user has selected ok or cancel.
    * @param {Object} s Optional scope to execute the callback in.
    */
   confirm: function (t, cb, s) {
@@ -299,7 +299,7 @@ var tinyMCEPopup = {
    *
    * @method alert
    * @param {String} tx Title for the new alert dialog.
-   * @param {function} cb Callback function to be executed after the user has selected ok.
+   * @param {function} cb Callback function to be executed after the templates.user has selected ok.
    * @param {Object} s Optional scope to execute the callback in.
    */
   alert: function (tx, cb, s) {
@@ -340,7 +340,7 @@ var tinyMCEPopup = {
   /* _restoreSelection : function() {
       var e = window.event.srcElement;
 
-      // If user focus a non text input or textarea
+      // If templates.user focus a non text input or textarea
       if ((e.nodeName != 'INPUT' && e.nodeName != 'TEXTAREA') || e.type != 'text')
         tinyMCEPopup.restoreSelection();
     },*/

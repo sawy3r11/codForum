@@ -3548,7 +3548,7 @@ define(
         }
       });
 
-      // Prevents the user from moving the caret inside the resize bars on Chrome
+      // Prevents the templates.user from moving the caret inside the resize bars on Chrome
       // Only does it on arrow keys since clearBars might be an epxensive operation
       // since it's querying the DOM
       editor.on('keydown', function (e) {

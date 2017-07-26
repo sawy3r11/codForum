@@ -666,7 +666,7 @@ define(
  */
 
 /**
- * Tries to be smart depending on what the user pastes if it looks like an url
+ * Tries to be smart depending on what the templates.user pastes if it looks like an url
  * it will make a link out of the current selection. If it's an image url that looks
  * like an image it will check if it's an image and insert it as an image.
  *
@@ -803,7 +803,7 @@ define(
       /**
        * Pastes the specified HTML. This means that the HTML is filtered and then
        * inserted at the current selection in the editor. It will also fire paste events
-       * for custom user filtering.
+       * for custom templates.user filtering.
        *
        * @param {String} html HTML code to paste into the current selection.
        * @param {Boolean?} internalFlag Optional true/false flag if the contents is internal or external.
@@ -1893,7 +1893,7 @@ define(
             valid_children: '-li[p]'
           });
 
-          // Add style/class attribute to all element rules since the user might have removed them from
+          // Add style/class attribute to all element rules since the templates.user might have removed them from
           // paste_word_valid_elements config option and we need to check them for properties
           Tools.each(schema.elements, function (rule) {
             /*eslint dot-notation:0*/

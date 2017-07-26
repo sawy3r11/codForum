@@ -1,12 +1,10 @@
 package com.hashtagdk.controller;
 
 import com.hashtagdk.model.User;
-import com.hashtagdk.repository.UserRepository;
 import com.hashtagdk.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -31,32 +29,16 @@ public class ViewController {
     public ModelAndView getLoginPage(){
         ModelAndView modelAndView = new ModelAndView();
         User user = new User();
-        modelAndView.addObject("user", user);
+        modelAndView.addObject("templates/user", user);
         modelAndView.setViewName("login");
         return modelAndView;
-    }
-
-    @RequestMapping(method = RequestMethod.POST, value = {"/login"})
-    public ModelAndView loginPagePost(User user){
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("index");
-        return modelAndView;
-    }
-
-    public String getRegisterView(User user){
-        return "register";
-    }
-
-    @RequestMapping(method = RequestMethod.GET, value = "/index")
-    public String getIndex(){
-        return "index";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public ModelAndView registration(){
         ModelAndView modelAndView = new ModelAndView();
         User user = new User();
-        modelAndView.addObject("user", user);
+        modelAndView.addObject("templates/user", user);
         modelAndView.setViewName("register");
 
         return modelAndView;
@@ -77,7 +59,7 @@ public class ViewController {
             modelAndView.addObject("userExist", true);
         }
         else{
-            // add new user
+            // add new templates.user
             userService.save(user);
             modelAndView.setViewName("login");
         }

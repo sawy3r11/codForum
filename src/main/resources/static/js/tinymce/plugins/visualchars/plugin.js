@@ -1005,7 +1005,7 @@ define(
       var bookmark = editor.selection.getBookmark();
       var parentNode = Nodes.findParentElm(editor.selection.getNode(), body);
 
-      // if user does select all the parentNode will be undefined
+      // if templates.user does select all the parentNode will be undefined
       parentNode = parentNode !== undefined ? parentNode : body;
 
       hide(editor, parentNode);

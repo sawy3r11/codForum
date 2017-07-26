@@ -775,7 +775,7 @@ define(
             delete resultData.text;
           }
 
-          // Is email and not //user@domain.com
+          // Is email and not //templates.user@domain.com
           if (href.indexOf('@') > 0 && href.indexOf('//') == -1 && href.indexOf('mailto:') == -1) {
             delayedConfirm(
               editor,
