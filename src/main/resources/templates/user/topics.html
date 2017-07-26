@@ -2,7 +2,7 @@
 <html lang="pl" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Document</title>
+    <title>codForum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -57,13 +57,42 @@
         </div>
     </nav>
 
-    <div class="legend">
+
+    <section id="primary">
+        <h2 class="outline">Primary</h2>
         <div class="container">
             <form th:action="@{/user/addTopic}" method="get">
-                <button class="login" style="background-color: #09cb09">Załóż temat</button>
+                <button class="btn-addQuestion">Zadaj pytanie</button>
             </form>
+            <main class="box-article-home">
+
+                <article class="article-row" th:each="topic: ${topics}">
+                    <div class="forum-icon">
+                        <img th:src="@{/img/avatar.png}" class="img-responsive" style="border-color: #00FF00" alt="" />
+                    </div>
+                    <div class="forum-desc">
+                        <h2><a href="post.html" th:text="${topic.topicTitle}">Jak zainstalować Linuxa obok Windowsa?</a></h2>
+                        <p>Autor: <a href="#" th:text="${topic.user.login}">Mati</a>| <span th:text="${topic.date}">30 styczeń 2017</span></p>
+                    </div>
+                    <div class="forum-stats">
+                        <div data-title="Wyświetleń" class="forum-stats-tile">
+                            <p>20 <br/> <i class="fa fa-eye" aria-hidden="true"></i></p>
+                        </div>
+                        <div data-title="Postów" class="forum-stats-tile">
+                            <p>10 <br/> <i class="fa fa-comments" aria-hidden="true"></i></p>
+                        </div>
+                        <div data-title="Głosów" class="forum-stats-tile">
+                            <p>30 <br/> <i class="fa fa-thumbs-up" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </article>
+            </main>
         </div>
-    </div>
+    </section>
+
+
+
+
 
     <section id="legend">
        <h2 class="outline">Legenda</h2>

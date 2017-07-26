@@ -29,7 +29,7 @@ public class ViewController {
     public ModelAndView getLoginPage(){
         ModelAndView modelAndView = new ModelAndView();
         User user = new User();
-        modelAndView.addObject("templates/user", user);
+        modelAndView.addObject("user", user);
         modelAndView.setViewName("login");
         return modelAndView;
     }
@@ -38,7 +38,7 @@ public class ViewController {
     public ModelAndView registration(){
         ModelAndView modelAndView = new ModelAndView();
         User user = new User();
-        modelAndView.addObject("templates/user", user);
+        modelAndView.addObject("user", user);
         modelAndView.setViewName("register");
 
         return modelAndView;

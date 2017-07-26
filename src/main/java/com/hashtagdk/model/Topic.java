@@ -17,7 +17,7 @@ public class Topic {
     private Date date;
     private String topicTitle;
 
-    @Lob
+    @Column(length=10485760)
     private String topicContent;
     /*TODO
     * dodac enum z state*/

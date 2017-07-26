@@ -2,7 +2,7 @@
 <html lang="pl" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Document</title>
+    <title>codForum</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -70,13 +70,16 @@
     <section>
        <h2 class="outline">Add post</h2>
         <div class="container page-minFooter">
-            <form action="#" method="post" class="form-post">
+            <form th:action="@{/user/addTopic}"
+                  th:object="${topic}"
+                  method="post"
+                  class="form-post">
                 <div>
 
-                    <textarea name="topic" id="topic" cols="50" rows="1" placeholder="Temat: ..."></textarea>
+                    <textarea th:field="*{topicTitle}" name="topic" id="topic" cols="50" rows="1" placeholder="Temat: ..."></textarea>
                 </div>
                 <div class="add-postbox">
-                    <textarea name="addPost" id="post-content" cols="50" rows="10"></textarea>
+                    <textarea th:field="*{topicContent}" name="addPost" id="post-content" cols="50" rows="10"></textarea>
                 </div>
                 <button type="submit" class="btn-addQuestion">Dodaj Temat</button>
             </form>
