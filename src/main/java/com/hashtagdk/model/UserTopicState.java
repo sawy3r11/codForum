@@ -13,13 +13,34 @@ public class UserTopicState {
     private long id;
     /*TODO
     * dodadc   state!*/
-    private int topicAprob;
 
     @ManyToOne
-    @JoinColumn(name = "idUser")
     private User user;
 
     @ManyToOne
-    @JoinColumn(name = "idTopic")
     private Topic topic;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Topic getTopic() {
+        return topic;
+    }
+
+    public void setTopic(Topic topic) {
+        this.topic = topic;
+    }
 }

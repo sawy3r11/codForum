@@ -16,6 +16,7 @@ public class Topic {
     private Long idTopic;
     private Date date;
     private String topicTitle;
+    private int aprobationStat;
 
     @Column(length=10485760)
     private String topicContent;
@@ -96,5 +97,13 @@ public class Topic {
 
     public void setTopicContent(String topicContent) {
         this.topicContent = topicContent;
+    }
+
+    public int getAprobationStat() {
+        return aprobationStat;
+    }
+
+    public void setAprobationStat(int aprobationStat) {
+        this.aprobationStat = aprobationStat;
     }
 }

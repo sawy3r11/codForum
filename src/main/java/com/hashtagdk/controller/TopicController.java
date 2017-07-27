@@ -1,20 +1,19 @@
 package com.hashtagdk.controller;
 
-import com.hashtagdk.model.Post;
-import com.hashtagdk.model.Topic;
-import com.hashtagdk.model.User_Role;
+import com.hashtagdk.model.*;
 import com.hashtagdk.service.PostService;
+import com.hashtagdk.service.TopicPostStatisticService;
 import com.hashtagdk.service.TopicService;
 import com.hashtagdk.service.UserService;
 import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.method.P;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import com.hashtagdk.model.User;
 import sun.plugin.liveconnect.SecurityContextHelper;
 
 import java.util.List;
@@ -31,6 +30,8 @@ public class TopicController {
     private TopicService topicService;
     @Autowired
     private PostService postService;
+    @Autowired
+    private TopicPostStatisticService topicPostStatisticService;
 
     @RequestMapping(value = "/user/topics", method = RequestMethod.GET)
     public ModelAndView topic(){
@@ -65,7 +66,6 @@ public class TopicController {
     @RequestMapping(value = "/user/addTopic", method = RequestMethod.POST)
     public String addTopicPost(Topic topic){
         org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-
         User user = userService.findByLogin(auth.getName());
         topicService.addNewTopic(topic, user);
 
@@ -82,7 +82,9 @@ public class TopicController {
         modelAndView.addObject("topic", topic);
 
         //posts
-        List<Post> postList = postService.findPostbyTopic(topic);
+        //List<Post> postList = postService.findPostbyTopic(topic);
+        //new method!!!
+        List<Post> postList = postService.findPostByTopicOrderByApprobationState(topic);
         modelAndView.addObject("posts", postList);
 
         //username
@@ -92,4 +94,33 @@ public class TopicController {
 
         return modelAndView;
     }
+
+    @RequestMapping(value = "/user/topic/{aprob}/{idTopic}")
+    public String addAprob(@PathVariable String aprob, @PathVariable Long idTopic){
+        org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        User user = userService.findByLogin(auth.getName());
+
+        Topic topic = topicService.getTopic(idTopic);
+        if(aprob.equals("plus")){
+            topicPostStatisticService.addAprobation(user, topic, Aprobation.PLUS);
+        }
+        else if (aprob.equals("minus")){
+            topicPostStatisticService.addAprobation(user, topic, Aprobation.MINUS);
+        }
+
+        return "redirect:/user/topic/"+idTopic;
+    }
+
+    /*@RequestMapping(value = "/user/topic/minus/{idTopic}")
+    public String addMinusToTopic(@PathVariable Long idTopic){
+        org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        User user = userService.findByLogin(auth.getName());
+
+        Topic topic = topicService.getTopic(idTopic);
+
+        topicPostStatisticService.addAprobation(user, topic, Aprobation.MINUS);
+
+        return "redirect:/user/topic/"+idTopic;
+
+    }*/
 }

@@ -10,7 +10,7 @@ import javax.persistence.*;
  */
 
 @Entity
-public class PostAprobation {
+public class PostApprobation {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

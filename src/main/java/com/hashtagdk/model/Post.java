@@ -30,7 +30,7 @@ public class Post {
     private Topic topic;
 
     @OneToMany(mappedBy = "post")
-    private List<PostAprobation> postAprobations;
+    private List<PostApprobation> postApprobations;
 
     public Long getId() {
         return id;
@@ -88,11 +88,11 @@ public class Post {
         this.topic = topic;
     }
 
-    public List<PostAprobation> getPostAprobations() {
-        return postAprobations;
+    public List<PostApprobation> getPostApprobations() {
+        return postApprobations;
     }
 
-    public void setPostAprobations(List<PostAprobation> postAprobations) {
-        this.postAprobations = postAprobations;
+    public void setPostApprobations(List<PostApprobation> postApprobations) {
+        this.postApprobations = postApprobations;
     }
 }

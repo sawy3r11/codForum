@@ -10,7 +10,7 @@ public class TopicStat {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private int aprobationStat;
+   //
     private int visitStat;
     private int answerStat;
 
@@ -20,14 +20,6 @@ public class TopicStat {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public int getAprobationStat() {
-        return aprobationStat;
-    }
-
-    public void setAprobationStat(int aprobationStat) {
-        this.aprobationStat = aprobationStat;
     }
 
     public int getVisitStat() {

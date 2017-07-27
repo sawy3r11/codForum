@@ -63,9 +63,9 @@
                     <img th:src="@{/img/avatar.png}" class="img-responsive" alt="" />
                 </div>
                 <div class="post-details">
-                    <h2 th:text="${topic.topicTitle}">Jak zainstalowac windowsa obok Linuxa</h2>
+                    <h2 th:text="${topic.topicTitle}">TOPIC_TITLE</h2>
                     <p>
-                        Post napisany przez: <a href="#" th:text="${topic.user.login}">Mati</a>
+                        Post napisany przez: <a href="#" th:text="${topic.user.login}">AUTHOR</a>
                         <i class="fa fa-clock-o" aria-hidden="true"></i>
                         <span th:text="${topic.date}">27 styczeń 2017</span>
                     </p>
@@ -81,9 +81,9 @@
                         </p>
                     </div>
                     <div class="vote">
-                        <span><a href="#">+</a></span>
-                        <span>23</span>
-                        <span><a href="#">-</a></span>
+                        <span><a href="#" th:href="@{/user/topic/plus/}+${topic.idTopic}">+</a></span>
+                        <span th:text="${topic.aprobationStat}">23</span>
+                        <span><a href="#" th:href="@{/user/topic/minus/}+${topic.idTopic}" >-</a></span>
                     </div>
 
                 </article>
@@ -105,9 +105,9 @@
                         </p>
                     </div>
                     <div class="vote">
-                        <span><a href="#">+</a></span>
-                        <span>0</span>
-                        <span><a href="#">-</a></span>
+                        <span><a href="#" th:href="@{/user/topic/}+${topic.idTopic}+@{/post/plus/}+${post.id}">+</a></span>
+                        <span th:text="${post.aprobationState}">0</span>
+                        <span><a href="#" th:href="@{/user/topic/}+${topic.idTopic}+@{/post/minus/}+${post.id}">-</a></span>
                     </div>
                 </article>
                 <form th:action="@{/user/addPost/}+${topic.idTopic}" class="btn-answerArea">

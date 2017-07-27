@@ -24,4 +24,6 @@ public interface TopicRepository extends JpaRepository<Topic, Long> {
     List<Topic> findAll();
     Topic findByIdTopic(Long idTopic);
 
+    @Query(value = "select t from Topic t order by t.aprobationStat")
+    List<Topic> finAllAndOrderByAprobationStat();
 }

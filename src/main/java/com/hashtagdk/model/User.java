@@ -1,13 +1,9 @@
 package com.hashtagdk.model;
 
-import javafx.geometry.Pos;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by dawid on 7/13/17.
@@ -68,7 +64,7 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Post> posts;
     @OneToMany(mappedBy = "user")
-    private List<PostAprobation> postAprobations;
+    private List<PostApprobation> postApprobations;
 
     public long getId() {
         return id;
@@ -152,12 +148,12 @@ public class User {
         this.posts = posts;
     }
 
-    public List<PostAprobation> getPostAprobations() {
-        return postAprobations;
+    public List<PostApprobation> getPostApprobations() {
+        return postApprobations;
     }
 
-    public void setPostAprobations(List<PostAprobation> postAprobations) {
-        this.postAprobations = postAprobations;
+    public void setPostApprobations(List<PostApprobation> postApprobations) {
+        this.postApprobations = postApprobations;
     }
 
 }

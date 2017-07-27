@@ -1,5 +1,6 @@
 package com.hashtagdk.controller;
 
+import com.hashtagdk.model.Aprobation;
 import com.hashtagdk.model.Post;
 import com.hashtagdk.model.Topic;
 import com.hashtagdk.model.User;
@@ -51,6 +52,23 @@ public class PostController {
         post.setTopic(topic);
 
         postService.addNewPost(post);
+        return "redirect:/user/topic/"+idTopic;
+    }
+
+    @RequestMapping(value = "/user/topic/{idTopic}/post/{aprob}/{idPost}")
+    public String aprobPost(@PathVariable("idTopic") Long idTopic, @PathVariable("aprob") String aprob, @PathVariable("idPost") Long idPost){
+
+        org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        User user = userService.findByLogin(auth.getName());
+
+        if(aprob.equals("plus")){
+            postService.aprobPost(postService.findById(idPost), Aprobation.PLUS, user);
+        }
+        if(aprob.equals("minus")){
+            postService.aprobPost(postService.findById(idPost), Aprobation.MINUS, user);
+        }
+
+
         return "redirect:/user/topic/"+idTopic;
     }
 }
