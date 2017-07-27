@@ -59,18 +59,14 @@
     <section>
        <h2 class="outline">Add post</h2>
         <div class="container page-minFooter">
-            <form th:action="@{/user/addTopic}"
-                  th:object="${topic}"
+            <form th:action="@{/user/addPost/} + ${idTopic}"
+                  th:object="${post}"
                   method="post"
                   class="form-post">
-                <div>
-
-                    <textarea th:field="*{topicTitle}" name="topic" id="topic" cols="50" rows="1" placeholder="Temat: ..."></textarea>
-                </div>
                 <div class="add-postbox">
-                    <textarea th:field="*{topicContent}" name="addPost" id="post-content" cols="50" rows="10"></textarea>
+                    <textarea th:field="*{content}" name="addPost" id="post-content" cols="50" rows="10"></textarea>
                 </div>
-                <button type="submit" class="btn-addQuestion">Dodaj Temat</button>
+                <button type="submit" class="btn-addQuestion">Dodaj Post</button>
             </form>
         </div>
     </section>

@@ -3,7 +3,7 @@
 
 <head>
     <title>codForum</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800%7CRoboto:400,700,900" rel="stylesheet"/>
@@ -57,23 +57,66 @@
         </div>
     </nav>
     <section>
-       <h2 class="outline">Add post</h2>
         <div class="container page-minFooter">
-            <form th:action="@{/user/addTopic}"
-                  th:object="${topic}"
-                  method="post"
-                  class="form-post">
-                <div>
+            <div class="post-header">
+                <div class="forum-icon">
+                    <img th:src="@{/img/avatar.png}" class="img-responsive" alt="" />
+                </div>
+                <div class="post-details">
+                    <h2 th:text="${topic.topicTitle}">Jak zainstalowac windowsa obok Linuxa</h2>
+                    <p>
+                        Post napisany przez: <a href="#" th:text="${topic.user.login}">Mati</a>
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span th:text="${topic.date}">27 styczeń 2017</span>
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper">
 
-                    <textarea th:field="*{topicTitle}" name="topic" id="topic" cols="50" rows="1" placeholder="Temat: ..."></textarea>
-                </div>
-                <div class="add-postbox">
-                    <textarea th:field="*{topicContent}" name="addPost" id="post-content" cols="50" rows="10"></textarea>
-                </div>
-                <button type="submit" class="btn-addQuestion">Dodaj Temat</button>
-            </form>
+                <article class="post">
+
+                    <div class="post-content">
+                        <p th:utext="${topic.topicContent}">
+                            lorem
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>23</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+
+                </article>
+                <form th:action="@{/user/addPost/}+${topic.idTopic}" class="btn-answerArea">
+                    <button class="btn-answer right">Napisz post</button>
+                </form>
+                <article class="post" th:each="post:${posts}">
+                    <div class="post-profil">
+                        <div class="forum-icon">
+                            <img th:src="@{/img/avatar.png}" class="img-responsive" alt=""/>
+                        </div>
+                        <a href="#" th:text="${post.user.login}">Mati</a>
+                        <p>Post: 16</p>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-date" th:text="${post.date}"><i class="fa fa-clock-o" aria-hidden="true"></i>27 styczeń 2017</p>
+                        <p th:utext="${post.content}">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro explicabo saepe neque magnam ipsum laudantium sint, eveniet atque, ex error doloribus, placeat odit quam nostrum voluptatibus voluptate omnis, necessitatibus non quia ut. Animi nam, temporibus quae dicta odio provident consequatur aliquid, molestiae nihil ipsam soluta excepturi cum. Iusto, totam esse.
+                        </p>
+                    </div>
+                    <div class="vote">
+                        <span><a href="#">+</a></span>
+                        <span>0</span>
+                        <span><a href="#">-</a></span>
+                    </div>
+                </article>
+                <form th:action="@{/user/addPost/}+${topic.idTopic}" class="btn-answerArea">
+                    <button class="btn-answer right">Napisz post</button>
+                </form>
+            </div>
         </div>
     </section>
+
     <footer class="page-footer">
         <div class="prefooter">
             <div class="container">
@@ -92,14 +135,8 @@
         </div>
     </footer>
 
-
-    <script src="../static/js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
-    <script src="../static/js/main.js" th:src="@{/js/main.js}"></script>
-
-
-    <script src="js/tinymce/tinymce.min.js" th:src="@{/js/tinymce/tinymce.min.js}"></script>
-    <script>tinymce.init({ selector:'textarea#post-content' });</script>
-
+    <script src="../../js/jquery-3.2.1.min.js" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script src="../../js/main.js" th:src="@{/js/main.js}"></script>
 </body>
 
 </html>

@@ -37,6 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
     public void configure(HttpSecurity httpSecurity) throws Exception{
         httpSecurity.authorizeRequests()
                     .antMatchers("/index").hasAnyAuthority("USER")
+                    .antMatchers("/user/**").hasAnyAuthority("USER")
                 .and()
                 .formLogin()
                     .loginPage("/login")

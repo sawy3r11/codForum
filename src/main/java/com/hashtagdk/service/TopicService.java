@@ -38,4 +38,8 @@ public class TopicService {
 
         return topicList;
     }
+
+    public Topic getTopic(Long id){
+        return topicRepository.findByIdTopic(id);
+    }
 }

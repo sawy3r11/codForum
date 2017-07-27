@@ -17,7 +17,7 @@
         <div class="container">
             <div class="left">
                 <h1 class="page-header">
-                    <a href="user/topics.html"><i class="fa fa-laptop" aria-hidden="true"></i><span>codForum</span></a>
+                    <a th:href="@{~/user/topics}"><i class="fa fa-laptop" aria-hidden="true"></i><span>codForum</span></a>
                 </h1>
             </div>
             <div class="headerCol right">
@@ -35,22 +35,11 @@
                         <div class="login-box">
                             <span id="btn-signin" class="btn-navlist"><i class="fa fa-user" aria-hidden="true"></i></span>
                             <div class="login-panel">
-                                <h2 class="login-header">Login</h2>
-                                <form action="#" method="post" class="login-container">
-                                    <div class="input-box">
-                                        <input type="text" id="username" class="login-input" placeholder="Nazwa użytkownika" required="required"></input>
-                                        <label for="username"><i class="fa fa-user" aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="input-box">
-                                        <input type="password" id="password" class="login-input" placeholder="Hasło" required="required"></input>
-                                        <label for="password"><i class="fa fa-unlock-alt" aria-hidden="true"></i></label>
-                                    </div>
-                                    <div class="input-box">
-                                        <button class="login">Zaloguj się</button>
-                                    </div>
-                                </form>
-                                <form action="register.html">
-                                    <button class="login" style="background-color: #55D132">Nie masz konta? Zarejestruj się!</button>
+                                <h2 class="login-header">Twoje Konto</h2>
+                                <h3>Zalogowany jako: </h3>
+                                <span th:utext="${login}">miejsce_na_login</span>
+                                <form th:action="@{/logout}" method="get">
+                                    <button class="login" style="background-color: #fc3246">Wyloguj się</button>
                                 </form>
                             </div>
                         </div>

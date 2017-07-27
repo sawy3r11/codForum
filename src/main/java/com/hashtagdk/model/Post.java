@@ -16,6 +16,7 @@ public class Post {
     private Long id;
 
     private Date date;
+    @Column(length=10485760)
     private String content;
     private int aprobationState;
     private int lastUpdateDate;

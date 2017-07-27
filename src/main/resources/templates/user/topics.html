@@ -17,7 +17,7 @@
         <div class="container">
             <div class="left">
                 <h1 class="page-header">
-                    <a href="topics.html"><i class="fa fa-laptop" aria-hidden="true"></i><span>codForum</span></a>
+                    <a th:href="@{~/user/topics}"><i class="fa fa-laptop" aria-hidden="true"></i><span>codForum</span></a>
                 </h1>
             </div>
             <div class="headerCol right">
@@ -71,7 +71,7 @@
                         <img th:src="@{/img/avatar.png}" class="img-responsive" style="border-color: #00FF00" alt="" />
                     </div>
                     <div class="forum-desc">
-                        <h2><a href="post.html" th:text="${topic.topicTitle}">Jak zainstalować Linuxa obok Windowsa?</a></h2>
+                        <h2><a th:href="@{/user/topic/} + ${topic.idTopic}" th:text="${topic.topicTitle}">Jak zainstalować Linuxa obok Windowsa?</a></h2>
                         <p>Autor: <a href="#" th:text="${topic.user.login}">Mati</a>| <span th:text="${topic.date}">30 styczeń 2017</span></p>
                     </div>
                     <div class="forum-stats">

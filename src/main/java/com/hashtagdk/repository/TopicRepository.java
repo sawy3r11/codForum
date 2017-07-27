@@ -22,5 +22,6 @@ public interface TopicRepository extends JpaRepository<Topic, Long> {
     List<Topic> getTopics(@Param("limit") Integer limit,
                           @Param("offset") Integer offset);*/
     List<Topic> findAll();
+    Topic findByIdTopic(Long idTopic);
 
 }
