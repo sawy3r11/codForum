@@ -2,7 +2,9 @@ package com.hashtagdk.controller;
 
 import com.hashtagdk.model.User;
 import com.hashtagdk.service.UserService;
+import com.hashtagdk.service.UserTopicViewService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +20,8 @@ import javax.validation.Valid;
 public class ViewController {
 
     private UserService userService;
+    @Autowired
+    private UserTopicViewService userTopicViewService;
 
     @Autowired
     public ViewController(UserService userService){
@@ -61,6 +65,7 @@ public class ViewController {
         else{
             // add new templates.user
             userService.save(user);
+            userTopicViewService.addedNewUser(user);
             modelAndView.setViewName("login");
         }
         return modelAndView;

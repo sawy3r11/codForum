@@ -5,9 +5,7 @@ import com.hashtagdk.model.Post;
 import com.hashtagdk.model.Topic;
 import com.hashtagdk.model.User;
 import com.hashtagdk.repository.TopicRepository;
-import com.hashtagdk.service.PostService;
-import com.hashtagdk.service.TopicService;
-import com.hashtagdk.service.UserService;
+import com.hashtagdk.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -28,6 +26,8 @@ public class PostController {
     private PostService postService;
     @Autowired
     private TopicService topicService;
+    @Autowired
+    private UserTopicViewService userTopicViewService;
 
     @RequestMapping(value = "/user/addPost/{idTopic}", method = RequestMethod.GET)
     public ModelAndView addNewPost(@PathVariable Long idTopic){
@@ -45,11 +45,14 @@ public class PostController {
         org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.findByLogin(auth.getName());
         Topic topic = topicService.getTopic(idTopic);
+        topicService.incrementNumberOfPost(topic);
 
         //add user to Post
         post.setUser(user);
         //add topic
         post.setTopic(topic);
+
+        userTopicViewService.addedNewPost(topic);
 
         postService.addNewPost(post);
         return "redirect:/user/topic/"+idTopic;

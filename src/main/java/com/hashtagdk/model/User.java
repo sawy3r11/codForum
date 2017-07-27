@@ -59,12 +59,15 @@ public class User {
     private List<Topic> topics;
 
     @OneToMany(mappedBy = "user")
-    private List<UserTopicState> userTopicStates;
+    private List<UserTopicApprobationState> userTopicApprobationStates;
 
     @OneToMany(mappedBy = "user")
     private List<Post> posts;
     @OneToMany(mappedBy = "user")
     private List<PostApprobation> postApprobations;
+
+    @OneToMany
+    private List<TopicUserViewState> topicUserViewStates;
 
     public long getId() {
         return id;
@@ -132,12 +135,12 @@ public class User {
         this.topics = topics;
     }
 
-    public List<UserTopicState> getUserTopicStates() {
-        return userTopicStates;
+    public List<UserTopicApprobationState> getUserTopicApprobationStates() {
+        return userTopicApprobationStates;
     }
 
-    public void setUserTopicStates(List<UserTopicState> userTopicStates) {
-        this.userTopicStates = userTopicStates;
+    public void setUserTopicApprobationStates(List<UserTopicApprobationState> userTopicApprobationStates) {
+        this.userTopicApprobationStates = userTopicApprobationStates;
     }
 
     public List<Post> getPosts() {
@@ -156,4 +159,11 @@ public class User {
         this.postApprobations = postApprobations;
     }
 
+    public List<TopicUserViewState> getTopicUserViewStates() {
+        return topicUserViewStates;
+    }
+
+    public void setTopicUserViewStates(List<TopicUserViewState> topicUserViewStates) {
+        this.topicUserViewStates = topicUserViewStates;
+    }
 }

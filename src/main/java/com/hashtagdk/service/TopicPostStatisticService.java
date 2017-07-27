@@ -3,7 +3,7 @@ package com.hashtagdk.service;
 import com.hashtagdk.model.Aprobation;
 import com.hashtagdk.model.Topic;
 import com.hashtagdk.model.User;
-import com.hashtagdk.model.UserTopicState;
+import com.hashtagdk.model.UserTopicApprobationState;
 import com.hashtagdk.repository.TopicRepository;
 import com.hashtagdk.repository.UserTopicStateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +21,8 @@ public class TopicPostStatisticService {
     private TopicRepository topicRepository;
 
     public Boolean addAprobation(User user, Topic topic, Aprobation aprobation){
-        UserTopicState userTopicState = userTopicStateRepository.findByUserAndTopic(user, topic);
-        if(userTopicState!=null){
+        UserTopicApprobationState userTopicApprobationState = userTopicStateRepository.findByUserAndTopic(user, topic);
+        if(userTopicApprobationState !=null){
             return false;
         }
         if(aprobation == Aprobation.PLUS){
@@ -33,10 +33,10 @@ public class TopicPostStatisticService {
         }
         topicRepository.save(topic);
 
-        userTopicState = new UserTopicState();
-        userTopicState.setUser(user);
-        userTopicState.setTopic(topic);
-        userTopicStateRepository.save(userTopicState);
+        userTopicApprobationState = new UserTopicApprobationState();
+        userTopicApprobationState.setUser(user);
+        userTopicApprobationState.setTopic(topic);
+        userTopicStateRepository.save(userTopicApprobationState);
 
         return true;
     }

@@ -1,7 +1,6 @@
 package com.hashtagdk.model;
 
 import javax.persistence.*;
-import java.sql.Clob;
 import java.util.Date;
 import java.util.List;
 
@@ -18,6 +17,8 @@ public class Topic {
     private String topicTitle;
     private int aprobationStat;
 
+    private int numberOfPosts;
+
     @Column(length=10485760)
     private String topicContent;
     /*TODO
@@ -32,7 +33,22 @@ public class Topic {
     private User user;
 
     @OneToMany(mappedBy = "topic")
-    private List<UserTopicState> userTopicStates;
+    private List<UserTopicApprobationState> userTopicApprobationStates;
+
+    @OneToMany
+    private List<TopicUserViewState> topicUserViewStates;
+
+    //used only to display!!!
+    @Transient
+    private TopicStateENUM topicStateENUM;
+
+    public TopicStateENUM getTopicStateENUM() {
+        return topicStateENUM;
+    }
+
+    public void setTopicStateENUM(TopicStateENUM topicStateENUM) {
+        this.topicStateENUM = topicStateENUM;
+    }
 
     public Long getIdTopic() {
         return idTopic;
@@ -75,12 +91,12 @@ public class Topic {
         this.user = user;
     }
 
-    public List<UserTopicState> getUserTopicStates() {
-        return userTopicStates;
+    public List<UserTopicApprobationState> getUserTopicApprobationStates() {
+        return userTopicApprobationStates;
     }
 
-    public void setUserTopicStates(List<UserTopicState> userTopicStates) {
-        this.userTopicStates = userTopicStates;
+    public void setUserTopicApprobationStates(List<UserTopicApprobationState> userTopicApprobationStates) {
+        this.userTopicApprobationStates = userTopicApprobationStates;
     }
 
     public String getTopicTitle() {
@@ -105,5 +121,21 @@ public class Topic {
 
     public void setAprobationStat(int aprobationStat) {
         this.aprobationStat = aprobationStat;
+    }
+
+    public int getNumberOfPosts() {
+        return numberOfPosts;
+    }
+
+    public void setNumberOfPosts(int numberOfPosts) {
+        this.numberOfPosts = numberOfPosts;
+    }
+
+    public List<TopicUserViewState> getTopicUserViewStates() {
+        return topicUserViewStates;
+    }
+
+    public void setTopicUserViewStates(List<TopicUserViewState> topicUserViewStates) {
+        this.topicUserViewStates = topicUserViewStates;
     }
 }

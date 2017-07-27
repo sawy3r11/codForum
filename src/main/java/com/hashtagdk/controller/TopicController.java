@@ -1,10 +1,7 @@
 package com.hashtagdk.controller;
 
 import com.hashtagdk.model.*;
-import com.hashtagdk.service.PostService;
-import com.hashtagdk.service.TopicPostStatisticService;
-import com.hashtagdk.service.TopicService;
-import com.hashtagdk.service.UserService;
+import com.hashtagdk.service.*;
 import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.method.P;
@@ -32,6 +29,8 @@ public class TopicController {
     private PostService postService;
     @Autowired
     private TopicPostStatisticService topicPostStatisticService;
+    @Autowired
+    private UserTopicViewService userTopicViewService;
 
     @RequestMapping(value = "/user/topics", method = RequestMethod.GET)
     public ModelAndView topic(){
@@ -41,7 +40,7 @@ public class TopicController {
         User user = userService.findByLogin(auth.getName());
         modelAndView.addObject("login", user.getLogin());
 
-        List<Topic> topicList = topicService.getTopic(10, 0);
+        List<Topic> topicList = topicService.getTopic(10, 0, user);
         modelAndView.addObject("topics", topicList);
         modelAndView.setViewName("user/topics");
 
@@ -69,6 +68,8 @@ public class TopicController {
         User user = userService.findByLogin(auth.getName());
         topicService.addNewTopic(topic, user);
 
+        userTopicViewService.addedNewTopic(topic);
+
         return "redirect:/user/topics";
     }
 
@@ -91,6 +92,9 @@ public class TopicController {
         org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.findByLogin(auth.getName());
         modelAndView.addObject("login", user.getLogin());
+
+        //set like Viewed!
+        userTopicViewService.changeToViewed(user, topic);
 
         return modelAndView;
     }

@@ -3,28 +3,30 @@ package com.hashtagdk.model;
 import javax.persistence.*;
 
 /**
- * Created by dawid on 7/14/17.
+ * Created by dawid on 7/27/17.
  */
-
 @Entity
-public class UserTopicState {
+public class TopicUserViewState {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    /*TODO
-    * dodadc   state!*/
+    private Long id;
 
     @ManyToOne
     private User user;
-
     @ManyToOne
     private Topic topic;
 
-    public long getId() {
+    @Enumerated
+    private TopicStateENUM topicStateENUM;
+
+    //getters s
+
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -42,5 +44,13 @@ public class UserTopicState {
 
     public void setTopic(Topic topic) {
         this.topic = topic;
+    }
+
+    public TopicStateENUM getTopicStateENUM() {
+        return topicStateENUM;
+    }
+
+    public void setTopicStateENUM(TopicStateENUM topicStateENUM) {
+        this.topicStateENUM = topicStateENUM;
     }
 }
