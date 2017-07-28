@@ -58,7 +58,7 @@
     </nav>
     <section>
         <div class="container page-minFooter">
-            <div class="post-header">
+            <div class="post-header" th:if="${topic.closed} != true">
                 <div class="forum-icon">
                     <img th:src="@{/img/avatar.png}" class="img-responsive" alt="" />
                 </div>
@@ -70,24 +70,47 @@
                         <span th:text="${topic.date}">27 styczeń 2017</span>
                     </p>
                 </div>
+
+                <form th:if="${author}==true" th:action="@{/user/topic/close/}+${topic.idTopic}" class="btn-answerArea">
+                    <button class="btn-answer  right">Zamknij Temat</button>
+                </form>
             </div>
+
+            <div class="post-header" th:if="${topic.closed} == true" style="background-color: #ed241a">
+                <div class="forum-icon">
+                    <img th:src="@{/img/avatar.png}" class="img-responsive" alt="" />
+                </div>
+                <div class="post-details">
+                    <h2 th:text="${topic.topicTitle}">TOPIC_TITLE</h2>
+                    <p>
+                        Post napisany przez: <a href="#" th:text="${topic.user.login}">AUTHOR</a>
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span th:text="${topic.date}">27 styczeń 2017</span>
+                    </p>
+                </div>
+
+                <form th:if="${author}==true" th:action="@{/user/topic/close/}+${topic.idTopic}" class="btn-answerArea">
+                    <button class="btn-answer  right">Zamknij Temat</button>
+                </form>
+            </div>
+
+            <article class="post">
+
+                <div class="post-content" style="width: 807px;">
+                    <p th:utext="${topic.topicContent}">
+                        lorem
+                    </p>
+                </div>
+                <div class="vote">
+                    <span><a href="#" th:href="@{/user/topic/plus/}+${topic.idTopic}">+</a></span>
+                    <span th:text="${topic.aprobationStat}">23</span>
+                    <span><a href="#" th:href="@{/user/topic/minus/}+${topic.idTopic}" >-</a></span>
+                </div>
+
+            </article>
+
             <div class="wrapper">
-
-                <article class="post">
-
-                    <div class="post-content">
-                        <p th:utext="${topic.topicContent}">
-                            lorem
-                        </p>
-                    </div>
-                    <div class="vote">
-                        <span><a href="#" th:href="@{/user/topic/plus/}+${topic.idTopic}">+</a></span>
-                        <span th:text="${topic.aprobationStat}">23</span>
-                        <span><a href="#" th:href="@{/user/topic/minus/}+${topic.idTopic}" >-</a></span>
-                    </div>
-
-                </article>
-                <form th:action="@{/user/addPost/}+${topic.idTopic}" class="btn-answerArea">
+                <form th:if="${topic.closed}!=true" th:action="@{/user/addPost/}+${topic.idTopic}" class="btn-answerArea">
                     <button class="btn-answer right">Napisz post</button>
                 </form>
                 <article class="post" th:each="post:${posts}">
@@ -110,7 +133,7 @@
                         <span><a href="#" th:href="@{/user/topic/}+${topic.idTopic}+@{/post/minus/}+${post.id}">-</a></span>
                     </div>
                 </article>
-                <form th:action="@{/user/addPost/}+${topic.idTopic}" class="btn-answerArea">
+                <form th:if="${topic.closed}!=true" th:action="@{/user/addPost/}+${topic.idTopic}" class="btn-answerArea">
                     <button class="btn-answer right">Napisz post</button>
                 </form>
             </div>

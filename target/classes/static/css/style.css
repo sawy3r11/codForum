@@ -652,6 +652,7 @@ ul, ol {
 .post {
     background-color: #f8f8f8;
     border-radius: 3px;
+    word-wrap: break-word;
     padding: 20px;
     margin: 15px 0;
 }
@@ -949,6 +950,12 @@ ul, ol {
 @media (min-width: 360px) {
     .login-panel {
         width: 325px;
+    }
+}
+
+@media (min-width: 464px) {
+    .post-header .post-details h2 {
+        text-align: left;
     }
 }
 

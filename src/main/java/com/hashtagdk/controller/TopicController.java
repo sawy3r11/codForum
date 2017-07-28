@@ -2,16 +2,13 @@ package com.hashtagdk.controller;
 
 import com.hashtagdk.model.*;
 import com.hashtagdk.service.*;
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.method.P;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import sun.plugin.liveconnect.SecurityContextHelper;
 
 import java.util.List;
 
@@ -40,9 +37,12 @@ public class TopicController {
         User user = userService.findByLogin(auth.getName());
         modelAndView.addObject("login", user.getLogin());
 
-        List<Topic> topicList = topicService.getTopic(10, 0, user);
+        List<Topic> topicList = topicService.getTopics(10, 0, user);
         modelAndView.addObject("topics", topicList);
         modelAndView.setViewName("user/topics");
+
+        //Forum stat
+        modelAndView.addObject("forumStat", topicPostStatisticService.getForumStat());
 
         return modelAndView;
     }
@@ -74,12 +74,15 @@ public class TopicController {
     }
 
     @RequestMapping(value = "/user/topic/{topicId}", method = RequestMethod.GET)
-    public ModelAndView getTopicPage(@PathVariable Long topicId){
+    public ModelAndView getTopic(@PathVariable Long topicId){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("user/postTopic");
 
+        org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        User user = userService.findByLogin(auth.getName());
+
         //topic
-        Topic topic = topicService.getTopic(topicId);
+        Topic topic = topicService.getTopic(topicId, user);
         modelAndView.addObject("topic", topic);
 
         //posts
@@ -89,12 +92,18 @@ public class TopicController {
         modelAndView.addObject("posts", postList);
 
         //username
-        org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        User user = userService.findByLogin(auth.getName());
         modelAndView.addObject("login", user.getLogin());
 
         //set like Viewed!
         userTopicViewService.changeToViewed(user, topic);
+
+        //check if Author
+        if(topic.getUser().equals(user)){
+            modelAndView.addObject("author", true);
+        }
+        else{
+            modelAndView.addObject("author", false);
+        }
 
         return modelAndView;
     }
@@ -104,7 +113,7 @@ public class TopicController {
         org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.findByLogin(auth.getName());
 
-        Topic topic = topicService.getTopic(idTopic);
+        Topic topic = topicService.getTopic(idTopic, user);
         if(aprob.equals("plus")){
             topicPostStatisticService.addAprobation(user, topic, Aprobation.PLUS);
         }
@@ -115,16 +124,9 @@ public class TopicController {
         return "redirect:/user/topic/"+idTopic;
     }
 
-    /*@RequestMapping(value = "/user/topic/minus/{idTopic}")
-    public String addMinusToTopic(@PathVariable Long idTopic){
-        org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        User user = userService.findByLogin(auth.getName());
-
-        Topic topic = topicService.getTopic(idTopic);
-
-        topicPostStatisticService.addAprobation(user, topic, Aprobation.MINUS);
-
+    @RequestMapping(value = "user/topic/close/{idTopic}")
+    public String closeTopic(@PathVariable Long idTopic){
+        topicService.closeTopic(idTopic);
         return "redirect:/user/topic/"+idTopic;
-
-    }*/
+    }
 }

@@ -1,10 +1,8 @@
 package com.hashtagdk.service;
 
-import com.hashtagdk.model.Aprobation;
-import com.hashtagdk.model.Topic;
-import com.hashtagdk.model.User;
-import com.hashtagdk.model.UserTopicApprobationState;
+import com.hashtagdk.model.*;
 import com.hashtagdk.repository.TopicRepository;
+import com.hashtagdk.repository.UserRepository;
 import com.hashtagdk.repository.UserTopicStateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +17,8 @@ public class TopicPostStatisticService {
     private UserTopicStateRepository userTopicStateRepository;
     @Autowired
     private TopicRepository topicRepository;
+    @Autowired
+    private UserRepository userRepository;
 
     public Boolean addAprobation(User user, Topic topic, Aprobation aprobation){
         UserTopicApprobationState userTopicApprobationState = userTopicStateRepository.findByUserAndTopic(user, topic);
@@ -40,5 +40,15 @@ public class TopicPostStatisticService {
 
         return true;
     }
+
+    public ForumStat getForumStat(){
+        ForumStat forumStat = new ForumStat();
+
+        forumStat.setNumberOfTopic(topicRepository.getNumberOfTopic());
+        forumStat.setNumberOfUSer(userRepository.numberOfUser());
+        forumStat.setNumberOfView(topicRepository.getnumberOfView());
+        return forumStat;
+    }
+
 }
 

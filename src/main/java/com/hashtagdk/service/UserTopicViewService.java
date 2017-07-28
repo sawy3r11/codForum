@@ -25,6 +25,9 @@ public class UserTopicViewService {
     private UserRepository userRepository;
     @Autowired
     private TopicRepository topicRepository;
+    @Autowired
+    private TopicService topicService;
+
 
     public void addedNewUser(User user){
         List<Topic> topicList = topicRepository.findAll();
@@ -62,8 +65,17 @@ public class UserTopicViewService {
     }
 
     public void changeToViewed(User user, Topic topic){
-        TopicUserViewState topicUserViewState = topicViewUserStateRepository.findByTopicAndUser(topic, user);
-        topicUserViewState.setTopicStateENUM(TopicStateENUM.VIEWED);
-        topicViewUserStateRepository.save(topicUserViewState);
+        if(topic.getTopicStateENUM() == TopicStateENUM.NEW_POST){
+            TopicUserViewState topicUserViewState = topicViewUserStateRepository.findByTopicAndUser(topic, user);
+            topicUserViewState.setTopicStateENUM(TopicStateENUM.VIEWED);
+            topicViewUserStateRepository.save(topicUserViewState);
+
+            topicService.incrementViewNumber(topic);
+        }
+
+    }
+
+    public TopicStateENUM getTopicState(Topic topic, User user){
+        return topicViewUserStateRepository.findByTopicAndUser(topic, user).getTopicStateENUM();
     }
 }

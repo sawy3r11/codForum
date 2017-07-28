@@ -26,4 +26,13 @@ public interface TopicRepository extends JpaRepository<Topic, Long> {
 
     @Query(value = "select t from Topic t order by t.aprobationStat")
     List<Topic> finAllAndOrderByAprobationStat();
+
+    @Query(value = "select t from Topic t order by t.lastUpdateDate desc")
+    List<Topic> findAllAndOrderByLastUpdateDate();
+
+    @Query(value = "select count (t) from Topic t")
+    Integer getNumberOfTopic();
+
+    @Query(value = "select sum(t.viewNumber) from Topic t")
+    Integer getnumberOfView();
 }

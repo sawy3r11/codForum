@@ -67,11 +67,13 @@
             <main class="box-article-home">
 
                 <article class="article-row" th:each="topic: ${topics}">
-                    <div class="forum-icon">
-                        <img th:if="${topic.topicStateENUM == T(com.hashtagdk.model.TopicStateENUM).NEW_POST}" th:src="@{/img/avatar.png}" class="img-responsive"  style="border-color: #00FF00" alt="" />
-                        <img th:if="${topic.topicStateENUM == T(com.hashtagdk.model.TopicStateENUM).CLOSED}" th:src="@{/img/avatar.png}" class="img-responsive"  style="border-color: red" alt="" />
-                        <img th:if="${topic.topicStateENUM == T(com.hashtagdk.model.TopicStateENUM).VIEWED}" th:src="@{/img/avatar.png}" class="img-responsive"   alt="" />
+                    <div class="forum-icon" th:if="${topic.closed!=true}">
+                        <img th:if="${topic.topicStateENUM == T(com.hashtagdk.model.TopicStateENUM).NEW_POST }" th:src="@{/img/avatar.png}" class="img-responsive"  style="border-color: #00FF00" alt="" />
 
+                        <img th:if="${topic.topicStateENUM == T(com.hashtagdk.model.TopicStateENUM).VIEWED} " th:src="@{/img/avatar.png}" class="img-responsive"   alt="" />
+                    </div>
+                    <div class="forum-icon" th:if="${topic.closed==true}">
+                        <img th:src="@{/img/avatar.png}" class="img-responsive"  style="border-color: red" alt="" />
                     </div>
                     <div class="forum-desc">
                         <h2><a th:href="@{/user/topic/} + ${topic.idTopic}" th:text="${topic.topicTitle}">Jak zainstalować Linuxa obok Windowsa?</a></h2>
@@ -79,7 +81,7 @@
                     </div>
                     <div class="forum-stats">
                         <div data-title="Wyświetleń" class="forum-stats-tile">
-                            <p>20 <br/> <i class="fa fa-eye" aria-hidden="true"></i></p>
+                            <p><span th:text="${topic.viewNumber}">20</span> <br/> <i class="fa fa-eye" aria-hidden="true"></i></p>
                         </div>
                         <div data-title="Postów" class="forum-stats-tile">
                             <p><span th:text="${topic.numberOfPosts}"> 10 </span><br/> <i class="fa fa-comments" aria-hidden="true"></i></p>
@@ -140,14 +142,14 @@
             <div class="general-stats">
                 <div class="container">
                     <ul>
-                        <li data-title="Napisanych postów">
-                            <p><i class="fa fa-comments" aria-hidden="true"></i> <br/> <span>120</span></p>
+                        <li data-title="Napisanych tematów">
+                            <p><i class="fa fa-comments" aria-hidden="true"></i> <br/> <span th:text="${forumStat.numberOfTopic}">120</span></p>
                         </li>
                         <li data-title="Zarejestrowanych użytkowników">
-                            <p><i class="fa fa-users" aria-hidden="true"></i> <br/> <span>30</span></p>
+                            <p><i class="fa fa-users" aria-hidden="true"></i> <br/> <span th:text="${forumStat.numberOfUSer}">30</span></p>
                         </li>
                         <li data-title="Odwiedzin">
-                            <p><i class="fa fa-eye" aria-hidden="true"></i> <br/> <span>12899</span></p>
+                            <p><i class="fa fa-eye" aria-hidden="true"></i> <br/> <span th:text="${forumStat.numberOfView}">12899</span></p>
                         </li>
                     </ul>
                 </div>

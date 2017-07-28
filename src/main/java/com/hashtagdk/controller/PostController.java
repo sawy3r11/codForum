@@ -4,7 +4,6 @@ import com.hashtagdk.model.Aprobation;
 import com.hashtagdk.model.Post;
 import com.hashtagdk.model.Topic;
 import com.hashtagdk.model.User;
-import com.hashtagdk.repository.TopicRepository;
 import com.hashtagdk.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -44,13 +43,15 @@ public class PostController {
 
         org.springframework.security.core.Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.findByLogin(auth.getName());
-        Topic topic = topicService.getTopic(idTopic);
+        Topic topic = topicService.getTopic(idTopic, user);
         topicService.incrementNumberOfPost(topic);
 
         //add user to Post
         post.setUser(user);
         //add topic
         post.setTopic(topic);
+        //update LastUpdateDate
+        topicService.updateLastUpdate(topic);
 
         userTopicViewService.addedNewPost(topic);
 

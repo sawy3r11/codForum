@@ -18,6 +18,9 @@ public class Topic {
     private int aprobationStat;
 
     private int numberOfPosts;
+    private int viewNumber;
+
+    private Boolean closed;
 
     @Column(length=10485760)
     private String topicContent;
@@ -137,5 +140,21 @@ public class Topic {
 
     public void setTopicUserViewStates(List<TopicUserViewState> topicUserViewStates) {
         this.topicUserViewStates = topicUserViewStates;
+    }
+
+    public int getViewNumber() {
+        return viewNumber;
+    }
+
+    public void setViewNumber(int viewNumber) {
+        this.viewNumber = viewNumber;
+    }
+
+    public Boolean getClosed() {
+        return closed;
+    }
+
+    public void setClosed(Boolean closed) {
+        this.closed = closed;
     }
 }
